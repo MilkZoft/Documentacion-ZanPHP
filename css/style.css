@@ -122,6 +122,8 @@ footer {
 	float:left;
 	width:240px;	
 	background-color:black;
+	font-size: 0.8em;
+	color: #CCC;
 }
 
 #Content {
@@ -132,7 +134,7 @@ footer {
 #Menu {
 	height:100%;	
 	margin-left:5px;
-	font-size:.8em;
+	font-size:0.8em;
 	color:white;
 }
 
