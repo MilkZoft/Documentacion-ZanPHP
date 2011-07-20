@@ -99,6 +99,7 @@ footer {
 
 .text {
 	text-align: justify;
+	font-size: 1.2em;
 }
 
 .sub-title {
@@ -128,7 +129,7 @@ footer {
 
 #Content {
 	float:right;
-	width:78%;
+	width:920px;
 }
 
 #Menu {
