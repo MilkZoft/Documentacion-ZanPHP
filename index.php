@@ -71,7 +71,7 @@ define("_modRewrite", FALSE);
 				<div id="Menu2">
 					<ul>
 						<li class="ListMenu"><?php print __("Basic Info"); ?></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/zanphp"><?php print __("ZanPHP v.1.0"); ?></a></li>
+							<li class="ListSMenu"><a href="<?php print $URL; ?>"><?php print __("ZanPHP v.1.0"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/server_requirements"><?php print __("Server Requirements"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/licence"><?php print __("License Agreement"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/credits"><?php print __("Credits"); ?></a></li>

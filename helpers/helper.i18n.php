@@ -13,8 +13,8 @@ if(_language === "English") {
 }
 	
 
-function __($text, $section = NULL, $number = 0) {
-	return utf8_encode(translation($text, $section, $number)); 
+function __($text) {
+	return translation($text); 
 }
 
 function getXMLang($language, $invert = FALSE) {

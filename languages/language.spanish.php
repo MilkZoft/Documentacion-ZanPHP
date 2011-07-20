@@ -1,124 +1,91 @@
+<<<<<<< HEAD
 <?php
 function translation($text) {	
 	//Tabla de contenidos
-	if($text === "Basic Info") {
-		return "Información Básica";
-	} elseif($text === "Server Requirements") {
-		return "Requerimientos del Servidor";
-	} elseif($text === "License Agreement") {
-		return "Licencia de Uso";
-	} elseif($text === "Credits") {
-		return "Créditos";
-	} elseif($text === "Installation") {
-		return "Instalación";
-	} elseif($text === "Downloading ZanPHP v.1.0") {
-		return "Descargar ZanPHP v.1.0";
-	} elseif($text === "Instructions") {
-		return "Instrucciones";
-	} elseif($text === "Troubleshooting") {
-		return "Solución de Problemas";
-	} elseif($text === "Introduction") {
-		return "Introducción";
-	} elseif($text === "Getting Started") {
-		return "Primeros Pasos";
-	} elseif($text === "Supported Features") {
-		return "Compatibilidad";
-	} elseif($text === "Model-View-Controller") {
-		return "Modelo-Vista-Controlador";
-	} elseif($text === "General Topics") {
-		return "Temas Generales";
-	} elseif($text === "File's Structure") {
-		return "Estructura de Archivos";
-	} elseif($text === "Configuration") {
-		return "Configuración";
-	} elseif($text === "Databases") {
-		return "Bases de Datos";
-	} elseif($text === "Applications") {
-		return "Aplicaciones";
-	} elseif($text === "Controllers") {
-		return "Controladores";
-	} elseif($text === "Views") {
-		return "Vistas";
-	} elseif($text === "Models") {
-		return "Modelos";
-	} elseif($text === "Translations") {
-		return "Traducciones";
-	} elseif($text === "Debugging") {
-		return "Depuración";
-	} elseif($text === "Libraries") {
-		return "Librerías";
-	} elseif($text === "Scripts") {
-		return "Códigos";
-	} elseif($text === "Templates") {
-		return "Plantillas";
-	} elseif($text === "Style Sheets") {
-		return "Hojas de Estilo";
-	} elseif($text === "Themes") {
-		return "Diseños";
-	} elseif($text === "Classes Reference") {
-		return "Referencia de las Clases";
-	} elseif($text === "Database Class") {
-		return "Clase Database";
-	} elseif($text === "Db Class") {
-		return "Clase Db";
-	} elseif($text === "Files Class") {
-		return "Clase Files";
-	} elseif($text === "Images Class") {
-		return "Clase Images";
-	} elseif($text === "Library Class") {
-		return "Clase Library";
-	} elseif($text === "Load Class") {
-		return "Clase Load";
-	} elseif($text === "MySQLi_Db Class") {
-		return "Clase MySQLi_Db";
-	} elseif($text === "Pagination Class") {
-		return "Clase Pagination";
-	} elseif($text === "Singleton Class") {
-		return "Clase Singleton";
-	} elseif($text === "Templates Class") {
-		return "Clase Templates";
-	} elseif($text === "Helpers Reference") {
-		return "Referencia de los Ayudantes";
-	} elseif($text === "Alerts Helper") {
-		return "Ayudante Alerts";
-	} elseif($text === "Array Helper") {
-		return "Ayudante Array";
-	} elseif($text === "Autoload Helper") {
-		return "Ayudante Autoload";
-	} elseif($text === "Benchmark Helper") {
-		return "Ayudante Benchmark";
-	} elseif($text === "Browser Helper") {
-		return "Ayudante Browser";
-	} elseif($text === "Debugging Helper") {
-		return "Ayudante Debugging";
-	} elseif($text === "Email Helper") {
-		return "Ayudante Email";
-	} elseif($text === "Errors Helper") {
-		return "Ayudante Errors";
-	} elseif($text === "Forms Helper") {
-		return "Ayudante Forms";
-	} elseif($text === "HTML Helper") {
-		return "Ayudante HTML";
-	} elseif($text === "il8n Helper") {
-		return "Ayudante il8n";
-	} elseif($text === "Inflect Helper") {
-		return "Ayudante Inflect";
-	} elseif($text === "Router Helper") {
-		return "Ayudante Router";
-	} elseif($text === "Security Helper") {
-		return "Ayudante Security";
-	} elseif($text === "Sessions Helper") {
-		return "Ayudante Sessions";
-	} elseif($text === "String Helper") {
-		return "Ayudante String";
-	} elseif($text === "Time Helper") {
-		return "Ayudante Time";
-	} elseif($text === "Validations Helper") {
-		return "Ayudante Validations";
-	} elseif($text === "Web Helper") {
-		return "Ayudante Web";
-	} elseif($text === "Table of Contents") {
-		return "Tabla de Contenidos";
+	switch($text) {
+		//Bienvenida
+		case "Welcome to ZanPHP": return "Bienvenido a ZanPHP"; break;
+		case "ZanPHP is an agile Web application development framework written in PHP5 that uses different design patterns and best practices to create applications more quickly with good quality code":
+			return "ZanPHP es un framework de desarrollo ágil de aplicaciones Web escrito en PHP5 el cual utiliza distintos patrones de diseño y las mejores prácticas para crear aplicaciones más rápidamente y con buena calidad de código"; break;
+		case "Some of the advantages of ZanPHP are:":
+			return "Algunas de las ventajas de ZanPHP son las siguientes:"; break;
+		case "Easy to install and configure": return "Fácil de instalar y configurar"; break;
+		case "Easy to learn": return "Fácil de aprender"; break;	
+		case "You can create almost any type of Web applications": return "Puedes crear casi cualquier tipo de aplicaciones Web"; break;	
+		case "Compatible with different platforms": return "Compatible con distintas plataformas"; break;	
+		case "Object oriented": return "Orientado a objetos"; break;	
+		case "Use lots of design patterns and best practices to produce higher quality code": return "Utiliza gran cantidad de patrones de diseño y las mejores prácticas para producir código de mayor calidad"; break;	
+		case "Scalable applications and easy to maintain": return "Aplicaciones escalables y fáciles de mantener"; break;	
+		case "Documentation in English and Spanish": return "Documentación en Inglés y Español"; break;
+		case "Integration with jQuery and jQuery Mobile, Ajax and other new technologies": return "Integración con jQuery y jQuery Mobile, Ajax y otras nuevas tecnologías"; break;
+		case "It is free software": return "Es Software Libre"; break;	
+		
+		//Server requirements
+		case "PHP 5.1.X or higher": return "PHP 5.1.X o superior";
+		case "Databases supported: MySQL, MySQLi, MsSQL, Oracle, PostgreSQL and SQLite": return "Bases de datos soportadas: MySQL, MySQLi, MsSQL, Oracle, PostgreSQL y SQLite"; break;
+			
+		case "Basic Info": return "Información Básica"; break;
+		case "Server Requirements": return "Requerimientos del Servidor"; break;
+		case "License Agreement": return "Licencia de Uso"; break;
+		case "Credits": return "Créditos"; break;
+		case "Installation": return "Instalación"; break;
+		case "Downloading ZanPHP v.1.0": return "Descargar ZanPHP v.1.0"; break;
+		case "Credits": return "Créditos"; break;
+		case "Instructions": return "Instrucciones"; break;
+		case "Troubleshooting": return "Solución de Problemas"; break;
+		case "Introduction": return "Introducción"; break;
+		case "Getting Started": return "Primeros Pasos"; break;
+		case "Supported Features": return "Compatibilidad"; break;
+		case "Model View Controller": return "Modelo Vista Controlador"; break;
+		case "General Topics": return "Temas Generales"; break;
+		case "File's Structure": return "Estructura de Archivos"; break;
+		case "Configuration": return "Configuración"; break;
+		case "Databases": return "Bases de Datos"; break;
+		case "Applications": return "Aplicaciones"; break;
+		case "Controllers": return "Controladores"; break;
+		case "Views": return "Vistas"; break;
+		case "Models": return "Modelos"; break;
+		case "Translations": return "Traducciones"; break;
+		case "Debugging": return "Depuración"; break;
+		case "Libraries": return "Librerías"; break;
+		case "Scripts": return "Códigos"; break;
+		case "Templates": return "Plantillas"; break;
+		case "Style Sheets": return "Hojas de Estilo"; break;
+		case "Themes": return "Diseños"; break;
+		case "Classes Reference": return "Referencia de las Clases"; break;
+		case "Database Class": return "Clase Database"; break;
+		case "Db Class": return "Clase Db"; break;
+		case "Files Class": return "Clase Files"; break;
+		case "Images Class": return "Clase Images"; break;
+		case "Library Class": return "Clase Library"; break;
+		case "Load Class": return "Clase Load"; break;
+		case "MySQLi_Db Class": return "Clase MySQLi_Db"; break;
+		case "Pagination Class": return "Clase Pagination"; break;
+		case "Singleton Class": return "Clase Singleton"; break;
+		case "Templates Class": return "Clase Templates"; break;
+		case "Helpers Reference": return "Referencia de los Ayudantes"; break;
+		case "Alerts Helper": return "Ayudante Alerts"; break;
+		case "Array Helper": return "Ayudante Array"; break;
+		case "Autoload Helper": return "Ayudante Autoload"; break;
+		case "Benchmark Helper": return "Ayudante Benchmark"; break;
+		case "Browser Helper": return "Ayudante Browser"; break;
+		case "Debugging Helper": return "Ayudante Debugging"; break;
+		case "Email Helper": return "Ayudante Email"; break;
+		case "Errors Helper": return "Ayudante Errors"; break;
+		case "Forms Helper": return "Ayudante Forms"; break;
+		case "HTML Helper": return "Ayudante HTML"; break;
+		case "il8n Helper": return "Ayudante il8n"; break;
+		case "Inflect Helper": return "Ayudante Inflect"; break;
+		case "Router Helper": return "Ayudante Router"; break;
+		case "Security Helper": return "Ayudante Security"; break;
+		case "Sessions Helper": return "Ayudante Sessions"; break;
+		case "String Helper": return "Ayudante String"; break;
+		case "Time Helper": return "Ayudante Time"; break;
+		case "Validations Helper": return "Ayudante Validations"; break;
+		case "Web Helper": return "Ayudante Web"; break;
+		case "Parameters": return "Parámetros"; break;
+		case "Return": return "Retorna"; break;
+		case "void": return "vacío"; break;
 	}
 	
 	//Helpers
