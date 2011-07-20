@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 function translation($text) {	
 	//Tabla de contenidos

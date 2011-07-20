@@ -47,7 +47,7 @@ define("_modRewrite", FALSE);
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title><?php print __("ZanPHP User Guide Version 1.0"); ?></title>
 		<style media="all" type="text/css">
-			@import "<?php print _base; ?>/css/style.css";
+			@import "<?php print _base; ?>css/style.css";
 
 			.TableContent {
 				background-image:url("<?php print _base; ?>images/<?php print $image; ?>");

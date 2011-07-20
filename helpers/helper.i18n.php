@@ -14,7 +14,7 @@ if(_language === "English") {
 	
 
 function __($text) {
-	return translation($text); 
+	return htmlentities(translation($text)); 
 }
 
 function getXMLang($language, $invert = FALSE) {
