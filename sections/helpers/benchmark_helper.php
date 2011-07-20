@@ -20,57 +20,57 @@
 
 
 	<article>
-		<p class="Title">
+		<p class="title">
 			<?php print __("BenchMark Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/helper.benchmark.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper BenchMark allows benchmarking testing over Applications"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("benchmark");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle"> benchMarkStart()</p>
+		<p class="sub-title"> benchMarkStart()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This function sets the Benchmark Start Time"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				benchMarkStart();
 			</p>
 			
-		<p class="SubTitle"> benchMarkEnd()</p>
+		<p class="sub-title"> benchMarkEnd()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@float"); ?>;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This function returns the Benchmark Final Time"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 			
 				benchMarkStart(); <br /> <br />
 					

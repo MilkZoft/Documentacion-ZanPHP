@@ -20,44 +20,44 @@
 
 
 	<article>
-		<p class="Title">
+		<p class="title">
 			<?php print __("Array Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/helper.array.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper Array contains functions for manipulating arrays"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("array");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">isMultiArray()</p>
+		<p class="sub-title">isMultiArray()</p>
 		
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: isMultiArray($multiArray); <br />
 				<?php print __("Return"); ?>: @boolean;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("Returns true if the array is a double array, false if only is a simple array"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$array = array(1, 2, 3); <br /><br />
 				
 				//Returns false. <br />

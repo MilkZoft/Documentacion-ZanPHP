@@ -20,44 +20,44 @@
 
 
 	<article>
-		<p class="Title">
+		<p class="title">
 			<?php print __("Debugging Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/helper.debugging.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper Debugging contains functions for debugging PHP code"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("debugging");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">___()</p>
+		<p class="sub-title">___()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: ___($text); <br />
 				<?php print __("Return"); ?>:  <?php print __("void"); ?>;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This function is equals to PHP function die()"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$a = "1"; <br /><br />
 				
 				//Prints 1 and truncate the script.<br />
@@ -66,18 +66,18 @@
 				$b = "2";						
 			</p>
 			
-		<p class="SubTitle">____()</p>
+		<p class="sub-title">____()</p>
 		
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: ____($var, $dump = TRUE, $exit = TRUE); <br />
 				<?php print __("Return"); ?>: <?php print __("void"); ?>;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This function is equals to <strong>die(var_dump(\$var))</strong> functions with <strong>&lt;pre&gt;</strong> tag"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$array = array("One" => 1, "Two" => 2, "Three" => 3, "4"); <br /><br />
 				
 				____($array);<br /><br />
@@ -101,11 +101,11 @@
 				 */		
 			</p>	
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("If you want use print_r() function and did not truncate the script, You need to change some extra values on the parameters"); ?>. <?php print __("Example"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$array = array("One" => 1, "Two" => 2, "Three" => 3, "4"); <br /><br />
 				
 				____($array, FALSE, FALSE);<br /><br />

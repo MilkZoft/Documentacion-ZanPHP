@@ -20,44 +20,44 @@
 
 
 	<article>
-		<p class="Title">
+		<p class="title">
 			<?php print __("Autoload Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/helper.autoload.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper Autoload contains an implementation of the native PHP function __autoload()"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("autoload");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">__autoload()</p>
+		<p class="sub-title">__autoload()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: __autoload($class); <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This function is automatically called in case you are trying to use a class/interface which hasn't been defined yet"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 			
 				function __autoload($class) { <br />
 				&nbsp;&nbsp;&nbsp;$parts = explode("_", $class); <br /><br />

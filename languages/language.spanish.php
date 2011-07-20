@@ -591,6 +591,16 @@ function translation($text) {
 		return "Obtiene los archivos CSS. Debe ser incluido dentro del archivo header contenido en el Theme (Tema) actual";
 	} elseif($text === "Sets and loads a CSS's file") {
 		return "Configura y carga un archivo CSS";
+	} elseif($text === "Sets and loads a js's file") {
+		return "Configura y carga un archivo JS";
+	} elseif($text === "Sets header's title") {
+		return "Configura el título del encabezado";
+	} elseif($text === "Gets the header's title") {
+		return "Obtiene el título del encabezado";
+	} elseif($text === "") {
+		return "";
+	} elseif($text === "") {
+		return "";
 	} elseif($text === "") {
 		return "";
 	} elseif($text === "") {

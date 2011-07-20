@@ -143,7 +143,7 @@
 			</p>
 			
 			<p class="code">
-				//This statement loads a CSS file from a specific application directory <br />
+				//Instancing the Template Class <br />
 				$this->Templates = $this->core("Templates"); 					<br /> <br />
 				
 				$this->Templates->theme = _webTheme;
@@ -162,7 +162,7 @@
 			</p>
 			
 			<p class="code">
-				//This statement loads a CSS file from a specific application directory <br />
+				//Instancing the Template Class <br />
 				$this->Templates = $this->core("Templates"); 					<br /> <br />
 				
 				//Assuming $data is a SQL query and there is records on it  <br />
@@ -194,11 +194,11 @@
 			</p>
 			
 			<p class="code">
-				//This statement loads a CSS file from a specific application directory <br />
+				//Instancing the Template Class <br />
 				$this->Templates = $this->core("Templates"); 					<br /> <br />
 				
 				//This includes a CSS file in the header of the view  <br />
-				$this->Templates->CSS("my_css_file.css", "my_application", FALSE) <br /> <br />
+				$this->Templates->CSS("my_css_file", "my_application", FALSE) <br /> <br />
 			</p>	
 		
 		
@@ -215,7 +215,7 @@
 			
 			<p class="code">
 			
-				//This statement loads a CSS file from a specific application directory <br />
+				//Instancing the Template Class <br />
 				$this->Templates = $this->core("Templates"); 					<br /> <br />
 				
 				//Assuming _webTheme Constant exist and it is set  <br />
@@ -226,7 +226,7 @@
 			</p>			
 			
 			
-		<p class="sub-title">footer()</p>
+		<p class="sub-title">getJs()</p>
 
 			<p class="parameters">
 				<?php print __("Parameters"); ?>: None. <br />
@@ -234,52 +234,44 @@
 			</p>
 		
 			<p class="text">
-				<?php print __("Loads a footer template"); ?>.
+				<?php print __("Gets Javascript files. It must be included into the footer file from the theme current theme"); ?>.
 			</p>	
 			
 		
-		<p class="sub-title">header()</p>
+		<p class="sub-title">js()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: None. <br />
+				<?php print __("Parameters"); ?>: js(string $js, string $application = NULL, string $extra = NULL, bool $getJs = FALSE) <br />
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
 		
 			<p class="text">
-				<?php print __("Loads a header template"); ?>.
+				<?php print __("Sets and loads a js's file"); ?>.
 			</p>	
-		
-		
-		<p class="sub-title">helper()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: helper(string $helper, string $application = NULL) <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads a helper or multiple helper files"); ?>.
-			</p>
 			
 			<p class="code">
-			
-				//Loads "helper.my_helper.php" from the core directory: core/helpers directory <br />
-				$this->helper("my_helper"); <br /> <br />
-				
-				//Loads "helper.my_helper.php" from a specific application directory: applications/my_application/helpers directory <br />
-				$this->helper("my_helper", "my_application"); <br /> <br />
-				
-				//They can be loaded many helpers using an array of helpers <br />
-				$helpers = array("my_helper", "other_helper");
-				$this->helper($helpers);
-		
+				//Instancing the Template Class <br />
+				$this->Templates = $this->core("Templates"); <br /><br />
+
+				//This includes a JS file in the footer of the view <br />
+				$this->Templates->js("my_js_file", "my_application", NULL, TRUE) 
 			</p>
 		
-		
-		<p class="sub-title">hook()</p>
+		<p class="sub-title">getTitle()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: hook(string $helper, string $application = NULL) <br />
+				<?php print __("Parameters"); ?>: None. <br />
+				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
+			</p>
+		
+			<p class="text">
+				<?php print __("Sets header's title"); ?>.
+			</p>
+				
+		<p class="sub-title">title()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: title(string $title) <br />
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
 		
@@ -288,188 +280,32 @@
 			</p>
 			
 			<p class="code">
-			
-				//Loads "hook.my_hook.php" from the core directory: core/hooks directory <br />
-				$this->hook("my_hook"); <br /> <br />
-				
-				//Loads "hook.my_hook.php" from a specific application directory: applications/my_application/hooks directory <br />
-				$this->hook("my_hook", "my_application"); <br /> <br />
-				
-				//They can be loaded many hooks using an array of hooks <br />
-				$hooks = array("my_hook", "other_hook");
-				$this->hook($hooks);
-		
-			</p>
-			
-				
-		<p class="sub-title">js()</p>
+				//Instancing the Template Class <br />
+				$this->Templates = $this->core("Templates"); <br /><br />
 
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: js(string $script, string $application = NULL, string $extra = NULL, bool $getJS = FALSE) <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Sets a JS file from an specific application. It works as an Interface for the js method from the Templates class"); ?>. <?php print __("Example"); ?>.
-			</p>
-			
-			<p class="code">
-				$this->js("my_script", "my_app", NULL, FALSE)
-			</p>
-		
-		
-		<p class="sub-title">language()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: js(string $language) <br />
-				<?php print __("Return"); ?>:  <?php print __("@bool"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads a language file and sets the translations"); ?>.
-			</p>
-			
-			<p class="code">
-				$this->language("Spanish");
-			</p>
-		
-		
-		
-		<p class="sub-title">left()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: None. <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads a left template"); ?>.
-			</p>
-		
-		
-		<p class="sub-title">library()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: library(string $name, string $library = NULL) <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads a library"); ?>.
-			</p>
-			
-			<p class="code">
-				$this->library("My_Lib_File", "My_Lib");
-			</p>
-		
-		
-		<p class="sub-title">model()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: model(string $name) <br />
-				<?php print __("Return"); ?>:  <?php print __("@object"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads a model"); ?>.
-			</p>
-			
-			<p class="code">
-				//Loads model.application.php from applications/application/ directory. <br />
-				$this->model("Application_Model");
-			</p>
-		
-		
-		<p class="sub-title">render()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: None. <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Renders and outputs templates"); ?>.
-			</p>
-		
-		
-		<p class="sub-title">right()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: None. <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads a right template"); ?>.
-			</p>
-		
-		
-		<p class="sub-title">templates()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: template(string $name, string $vars = NULL) <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __("Loads templates"); ?>.
-			</p>
-		
-		
-		
-		<p class="sub-title">theme()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: theme(string $theme) <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-			
-			<p class="text">
-				<?php print __("Sets a theme. It works as an Interface for the theme method from the Templates class"); ?>. <?php print __("Example"); ?>:
-			</p>
-			
-			<p class="code">
-				//This statement sets a default theme <br />
-				$this->theme(_webTheme);
-
+				//This includes a JS file in the footer of the view <br />
+				$this->Templates->title("my_title"); 
 			</p>
 		
 		
 		<p class="sub-title">title()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: title(string $title = NULL) <br />
+				<?php print __("Parameters"); ?>: title(string $title) <br />
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
-			
+		
 			<p class="text">
-				<?php print __("Sets a document title. It works as an Interface for the title method from the Templates class"); ?>. <?php print __("Example"); ?>:
+				<?php print __("Loads a hook or multiple hooks files"); ?>.
 			</p>
 			
 			<p class="code">
-				//This statement sets a default theme <br />
-				$this->title(__("My_Title"));
+				//Instancing the Template Class <br />
+				$this->Templates = $this->core("Templates"); <br /><br />
 
+				//This includes a JS file in the footer of the view <br />
+				$this->Templates->title("my_title"); 
 			</p>
-		
-		
-		<p class="sub-title">view()</p>
 
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: view(string $name, string $application = NULL, string $vars = NULL) <br />
-				<?php print __("Return"); ?>:  <?php print __("@mixed"); ?>;
-			</p>
-			
-			<p class="text">
-				<?php print __("Loads a view"); ?>:
-			</p>
-			
-			<p class="code">
-				//This statement loads view.archive.php from applications/application/views/ directory  <br />
-				$this->view("archive", "application", $vars);
-
-			</p>
-	
-	
 			<!-- End Public Methods -->			
 	</article>		

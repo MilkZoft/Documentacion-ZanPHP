@@ -20,55 +20,55 @@
 
 
 	<article>
-		<p class="Title">
+		<p class="title">
 			<?php print __("Alerts Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/helper.alerts.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper Alerts contains the Standard errors and confirmations from the Framework to use over the applications"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("alerts");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">getAlert()</p>
+		<p class="sub-title">getAlert()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: getAlert($message, $type = "Error", $URL = NULL) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This function shows an Alert to Notify an Event"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				print getAlert("Error"); <br /><br />
 				
 				//Prints: &lt;div class="flashdata error"&gt; Error &lt;/div&gt; <br />						
 			</p>
 			
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("You are able to embed the message returned into a URL"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				print getAlert("Success!", "Success" "http://mydomain.com/success"); <br /><br />
 				
 				//Prints: &lt;a rev="External" href="mydomain.com/success"&gt;Success!&lt;/a&gt; .<br />						
