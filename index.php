@@ -132,7 +132,6 @@ define("_modRewrite", FALSE);
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/web_helper"><?php print __("Web Helper"); ?></a></li>
 					</ul>
 				</div>
-				<p class="TableContent"><?php print __("Table of Contents"); ?></p>
 			</div>						
 			
 			<section id="Content">			

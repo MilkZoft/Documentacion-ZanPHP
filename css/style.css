@@ -97,7 +97,6 @@ footer {
 	margin-top: -20px;
 }
 
-
 .text {
 	text-align: justify;
 }
@@ -123,42 +122,18 @@ footer {
 	float:left;
 	width:240px;	
 	background-color:black;
-	position:absolute;
-	top:0;
-	left:-230px;
 }
 
 #Content {
 	float:right;
 	width:96%;
-	
 }
 
 #Menu {
-	display:none;
 	height:100%;	
 	margin-left:5px;
 	font-size:.8em;
 	color:white;
-}
-
-.TableContent {
-	text-indent:-9999px;
-	background-repeat: none;
-	background-color:black;
-	display:block;
-	width:35px;
-	height:170px;
-	float:left;
-	position:fixed;
-	top:38%;
-	left:-10px;
-}
-
-.TableContent:hover {
-	cursor:pointer;
-	background-color: #ff3333;
-	left:0px;
 }
 
 .ListMenu {
