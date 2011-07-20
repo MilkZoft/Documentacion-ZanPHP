@@ -1,0 +1,184 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	color: #333;
+}
+
+a {
+	color: #06C;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+}
+
+a:active {
+	color: #F90;
+}
+
+#Languages {
+	float: right;
+	font-size: 0.8em;
+}
+
+#Container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+footer {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+
+#TopTitle h1 {
+	color: #06F;
+	font-size: 2em;
+	margin: 0px;
+}
+
+#TopTitle {
+	border-bottom: 1px solid #333;
+}
+
+#Ubication {
+	width: 500px;
+	font-size: 0.8em;
+	color: #666;
+	float: left;
+}
+
+#Search {
+	width: 208px;
+	font-size: 0.8em;
+	color: #666;
+	float: right;
+}
+
+#Search form fieldset {
+	border: none;
+}
+
+.Clear {
+	clear: both;	
+}
+
+.Input {
+	font-size: 0.9em;
+	border: 1px solid #333;	
+}
+
+.Submit {
+	font-size: 0.9em;
+	border: 1px solid #333;
+	background-color: #CCC;
+}
+
+.title {
+	color: #F33;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-bottom: 1px solid #333;
+	padding-bottom: 5px;
+}
+
+.parameters {
+	font-size: 0.8em;
+	color: #999;
+	font-style: italic;	
+}
+
+.small {
+	font-size: 0.8em;
+	color: #999;
+	font-style: italic;
+	margin-top: -20px;
+}
+
+
+.text {
+	text-align: justify;
+}
+
+.sub-title {
+	color: #333;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: 1px solid #333;
+	padding-bottom: 5px;
+}
+
+.code {
+	border: 1px solid #999;
+	background-color: #F5F5F5;
+	font-size: 0.8em;
+	padding: 10px;
+	font-family: "Courier New", Courier, monospace;
+	color: #006;
+}
+
+#Sidebar {
+	float:left;
+	width:240px;	
+	background-color:black;
+	position:absolute;
+	top:0;
+	left:-230px;
+}
+
+#Content {
+	float:right;
+	width:96%;
+	
+}
+
+#Menu {
+	display:none;
+	height:100%;	
+	margin-left:5px;
+	font-size:.8em;
+	color:white;
+}
+
+.TableContent {
+	text-indent:-9999px;
+	background-repeat: none;
+	background-color:black;
+	display:block;
+	width:35px;
+	height:170px;
+	float:left;
+	position:fixed;
+	top:38%;
+	left:-10px;
+}
+
+.TableContent:hover {
+	cursor:pointer;
+	background-color: #ff3333;
+	left:0px;
+}
+
+.ListMenu {
+	font-weight:bold;	
+	margin-top:8px;
+	text-indent:-25px;
+	list-style:none;
+}
+
+.ListSMenu {
+	margin-left:3px;
+	list-style-image: url(../images/arrow2.png);
+}
+
+.ListSMenu a {
+	color:#eee;
+	text-decoration:none;
+}
+
+.ListSMenu a:hover {
+	color:#bbb;
+	
+}
