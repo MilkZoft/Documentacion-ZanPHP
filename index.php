@@ -68,7 +68,7 @@ define("_modRewrite", FALSE);
 			</header>
 			
 			<div id="Sidebar">
-				<div id="Menu">
+				<div id="Menu2">
 					<ul>
 						<li class="ListMenu"><?php print __("Basic Info"); ?></li>
 							<li class="ListSMenu"><a href="#"><?php print __("ZanPHP v.1.0"); ?></a></li>
