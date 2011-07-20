@@ -82,7 +82,7 @@ define("_modRewrite", FALSE);
 						<li class="ListMenu"><?php print __("Introduction"); ?></li>
 							<li class="ListSMenu"><a href="#"><?php print __("Getting Started"); ?></a></li>
 							<li class="ListSMenu"><a href="#"><?php print __("Supported Features"); ?></a></li>
-							<li class="ListSMenu"><a href="#"><?php print __("Model-View-Controller"); ?></a></li>
+							<li class="ListSMenu"><a href="#"><?php print __("Model View Controller"); ?></a></li>
 						<li class="ListMenu"><?php print __("General Topics"); ?></li>
 							<li class="ListSMenu"><a href="#"><?php print __("File's Structure"); ?></a></li>
 							<li class="ListSMenu"><a href="#"><?php print __("Configuration"); ?></a></li>
@@ -99,15 +99,12 @@ define("_modRewrite", FALSE);
 							<li class="ListSMenu"><a href="#"><?php print __("Style Sheets"); ?></a></li>
 							<li class="ListSMenu"><a href="#"><?php print __("Themes"); ?></a></li>
 						<li class="ListMenu"><?php print __("Classes Reference"); ?></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/configuration_class"><?php print __("Configuration Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/database_class"><?php print __("Database Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/db_class"><?php print __("Db Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/email_class"><?php print __("Email Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/files_class"><?php print __("Files Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/images_class"><?php print __("Images Class"); ?></a></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/library_class"><?php print __("Library Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/load_class"><?php print __("Load Class"); ?></a></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/mysqli_class"><?php print __("MySQLi_Db Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/pagination_class"><?php print __("Pagination Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/singleton_class"><?php print __("Singleton Class"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/classes/templates_class"><?php print __("Templates Class"); ?></a></li>
@@ -118,7 +115,6 @@ define("_modRewrite", FALSE);
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/benchmark_helper"><?php print __("Benchmark Helper"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/browser_helper"><?php print __("Browser Helper"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/debugging_helper"><?php print __("Debugging Helper"); ?></a></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/email_helper"><?php print __("Email Helper"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/forms_helper"><?php print __("Forms Helper"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/html_helper"><?php print __("HTML Helper"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/helpers/i18n_helper"><?php print __("il8n Helper"); ?></a></li>
