@@ -1,4 +1,5 @@
 <?php
+//Ceron
 define("_domain", FALSE);
 define("_modRewrite", FALSE);
 
