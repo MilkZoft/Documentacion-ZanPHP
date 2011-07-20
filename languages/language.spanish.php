@@ -566,7 +566,38 @@ function translation($text) {
 		return "Carga una vista";
 	}
 	
+	//Templates Class
+	if($text === "This class allows to control design templates") {
+		return "Esta clase permite la manipulación de plantillas de diseño";
+	} elseif($text === "Contains the name of the current theme") {
+		return "Contiene el nombre del tema actual";
+	} elseif($text === "Contains the theme's path") {
+		return "Contiene el directorio del tema";
+	} elseif($text === "Contains the array of variables") {
+		return "Contiene el arreglo de variables";
+	} elseif($text === "Contains the the header's template title") {
+		return "Contiene el título del encabezado de la plantilla";
+	} elseif($text === "Contains the CSS's file from an specific application") {
+		return "Contiene el archivo CSS de una aplicación específica";
+	} elseif($text === "Contains the JavaScript's file from an specific application") {
+		return "Contiene el archivo Javascript de una aplicación específica";
+	} elseif($text === "Loads helpers: array, browser, debugging, forms, html and web") {
+		return "Carga los ayudantes: array, browser, debbuging, form, html and web";
+	} elseif($text === "Sets the current theme") {
+		return "Configura el tema actual";
+	} elseif($text === "Sets vars") {
+		return "Configura el arreglo vars";
+	} elseif($text === "Gets the CSS. It must be included into the header's file from the theme current theme") {
+		return "Obtiene los archivos CSS. Debe ser incluido dentro del archivo header contenido en el Theme (Tema) actual";
+	} elseif($text === "Sets and loads a CSS's file") {
+		return "Configura y carga un archivo CSS";
+	} elseif($text === "") {
+		return "";
+	} elseif($text === "") {
+		return "";
+	}
 	
+	#Load helpers: array, browser, debugging, forms, html and web
 	
 	
 
