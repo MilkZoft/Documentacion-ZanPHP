@@ -14,7 +14,7 @@ if(_language === "English") {
 	
 
 function __($text) {
-	return utf8_encode(translation($text)); 
+	return translation($text); 
 }
 
 function getXMLang($language, $invert = FALSE) {

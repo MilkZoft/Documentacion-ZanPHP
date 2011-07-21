@@ -5,52 +5,105 @@ function translation($text) {
 		//Bienvenida
 		case "Welcome to ZanPHP": return "Bienvenido a ZanPHP"; break;
 		case "ZanPHP is an agile Web application development framework written in PHP5 that uses different design patterns and best practices to create applications more quickly with good quality code":
-			return "ZanPHP es un framework de desarrollo ·gil de aplicaciones Web escrito en PHP5 el cual utiliza distintos patrones de diseÒo y las mejores pr·cticas para crear aplicaciones m·s r·pidamente y con buena calidad de cÛdigo"; break;
+			return "ZanPHP es un framework de desarrollo √°gil de aplicaciones Web escrito en PHP5 el cual utiliza distintos patrones de dise√±o y las mejores pr√°cticas para crear aplicaciones m√°s r√°pidamente y con buena calidad de c√≥digo"; break;
 		case "Some of the advantages of ZanPHP are:":
 			return "Algunas de las ventajas de ZanPHP son las siguientes:"; break;
-		case "Easy to install and configure": return "F·cil de instalar y configurar"; break;
-		case "Easy to learn": return "F·cil de aprender"; break;	
+		case "Easy to install and configure": return "F√°cil de instalar y configurar"; break;
+		case "Easy to learn": return "F√°cil de aprender"; break;	
 		case "You can create almost any type of Web applications": return "Puedes crear casi cualquier tipo de aplicaciones Web"; break;	
 		case "Compatible with different platforms": return "Compatible con distintas plataformas"; break;	
 		case "Object oriented": return "Orientado a objetos"; break;	
-		case "Use lots of design patterns and best practices to produce higher quality code": return "Utiliza gran cantidad de patrones de diseÒo y las mejores pr·cticas para producir cÛdigo de mayor calidad"; break;	
-		case "Scalable applications and easy to maintain": return "Aplicaciones escalables y f·ciles de mantener"; break;	
-		case "Documentation in English and Spanish": return "DocumentaciÛn en InglÈs y EspaÒol"; break;
-		case "Integration with jQuery and jQuery Mobile, Ajax and other new technologies": return "IntegraciÛn con jQuery y jQuery Mobile, Ajax y otras nuevas tecnologÌas"; break;
+		case "Use lots of design patterns and best practices to produce higher quality code": return "Utiliza gran cantidad de patrones de dise√±o y las mejores pr√°cticas para producir c√≥digo de mayor calidad"; break;	
+		case "Scalable applications and easy to maintain": return "Aplicaciones escalables y f√°ciles de mantener"; break;	
+		case "Documentation in English and Spanish": return "Documentaci√≥n en Ingl√©s y Espa√±ol"; break;
+		case "Integration with jQuery and jQuery Mobile, Ajax and other new technologies": return "Integraci√≥n con jQuery y jQuery Mobile, Ajax y otras nuevas tecnolog√≠as"; break;
 		case "It is free software": return "Es Software Libre"; break;	
 		
 		//Server requirements
-		case "PHP 5.1.X or higher": return "PHP 5.1.X o superior";
+		case "PHP 5.1.X or higher": return "PHP 5.1.X o superior"; break;
 		case "Databases supported: MySQL, MySQLi, MsSQL, Oracle, PostgreSQL and SQLite": return "Bases de datos soportadas: MySQL, MySQLi, MsSQL, Oracle, PostgreSQL y SQLite"; break;
-			
-		case "Basic Info": return "InformaciÛn B·sica"; break;
+		
+		//Licence
+		case "All rights reserved.": return "Todos los derechos reservados."; break;
+		case "This license is a legal agreement between you and MilkZoft, Inc. for the use of ZanPHP Software (the \"Software\"). By obtaining the Software you agree to comply with the terms and conditions of this license.": return "Esta licencia es un acuerdo legal entre usted y MilkZoft, Inc. para el uso de Software ZanPHP (el \"Software\"). Al obtener el Software, usted acepta cumplir con los t√©rminos y condiciones de esta licencia."; break;
+		case "PERMITTED USE": return "USO PERMITIDO"; break;
+		case "You are permitted to use, copy, modify, and distribute the Software and its documentation, with or without modification, for any purpose, provided that the following conditions are met:": return "Usted est√° autorizado para usar, copiar, modificar y distribuir el Software y su documentaci√≥n, con o sin modificaciones, para cualquier prop√≥sito, siempre que se cumplan los siguientes requisitos:"; break;
+		case "1. A copy of this license agreement must be included with the distribution.": return "1. Una copia de este acuerdo de licencia debe ser incluido con la distribuci√≥n."; break;
+		case "2. Redistributions of source code must retain the above copyright notice in all source code files.": return "2. La redistribuci√≥n del c√≥digo fuente deben conservar el aviso de copyright en todos los archivos de c√≥digo fuente."; break;
+		case "3. Redistributions in binary form must reproduce the above copyright notice in the documentation and/or other materials provided with the distribution.": return "3. Las redistribuciones en formato binario deben reproducir el aviso de copyright en la documentaci√≥n y / o otros materiales suministrados con la distribuci√≥n."; break;
+		case "4. Any files that have been modified must carry notices stating the nature of the change and the names of those who changed them.": return "4. Todos los archivos que han sido modificados deben llevar avisos indicando la naturaleza de los cambios y los nombres de aquellos que los cambi√≥."; break;
+		case "5. Products derived from the Software must include an acknowledgment that they are derived from ZanPHP in their documentation and/or other materials provided with the distribution.": return "5. Productos derivados del Software debe incluir un reconocimiento que se derivan de ZanPHP en su documentaci√≥n y / o otros materiales suministrados con la distribuci√≥n."; break;
+		case "6. Products derived from the Software may not be called \"ZanPHP\", nor may \"ZanPHP\" appear in their name, without prior written permission from MilkZoft, Inc.": return "6. Productos derivados del Software no puede ser llamado \"ZanPHP\", ni podr√° aparecer \"ZanPHP\" en su nombre, sin la previa autorizaci√≥n por escrito de MilkZoft, Inc."; break;
+		case "INDEMNITY": return "INDEMNIZACI√ìN"; break;
+		case "You agree to indemnify and hold harmless the authors of the Software and any contributors for any direct, indirect, incidental, or consequential third-party claims, actions or suits, as well as any related expenses, liabilities, damages, settlements or fees arising from your use or misuse of the Software, or a violation of any terms of this license.": return "Usted acepta indemnizar y mantener indemne a los autores del Software y todos los colaboradores por los da√±os directos, indirectos, incidentales o consecuentes reclamaciones de terceros, acciones o demandas, as√≠ como cualquier gasto, responsabilidades, da√±os, asentamientos o cargos derivados de su uso o mal uso del Software, o una violaci√≥n de cualquiera de los t√©rminos de esta licencia."; break;
+		case "DISCLAIMER OF WARRANTY": return "RENUNCIA DE GARANT√çA"; break;
+		case "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF QUALITY, PERFORMANCE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.": return "EL SOFTWARE SE ENTREGA \"TAL CUAL\", SIN GARANT√çA DE NING√öN TIPO, EXPRESA O IMPL√çCITA, INCLUYENDO, PERO NO LIMITADO A, LAS GARANT√çAS DE CALIDAD, RENDIMIENTO, NO INFRACCI√ìN, COMERCIALIZACI√ìN O IDONEIDAD PARA UN PROP√ìSITO PARTICULAR."; break;
+		case "LIMITATIONS OF LIABILITY": return "LIMITACIONES DE LA RESPONSABILIDAD"; break;
+		case "YOU ASSUME ALL RISK ASSOCIATED WITH THE INSTALLATION AND USE OF THE SOFTWARE.": return "USTED ASUME TODO RIESGO ASOCIADO CON LA INSTALACI√ìN Y EL USO DEL SOFTWARE."; break;
+		case "IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS OF THE SOFTWARE BE LIABLE FOR CLAIMS, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE. LICENSE HOLDERS ARE SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF USE AND ASSUME ALL RISKS ASSOCIATED WITH ITS USE, INCLUDING BUT NOT LIMITED TO THE RISKS OF PROGRAM ERRORS, DAMAGE TO EQUIPMENT, LOSS OF DATA OR SOFTWARE PROGRAMS, OR UNAVAILABILITY OR INTERRUPTION OF OPERATIONS.": return "EN NING√öN CASO LOS AUTORES O TITULARES DEL SOFTWARE SE HACE RESPONSABLE DE LAS RECLAMACIONES, DA√ëOS O CUALQUIER OTRA RESPONSABILIDAD QUE SE PRESENTE, DE, O EN RELACI√ìN CON EL SOFTWARE. LOS TITULARES DE LICENCIAS SON LOS UNICOS RESPONSABLES DE DETERMINAR LA CONVENIENCIA DE UTILIZACI√ìN Y ASUME LOS RIESGOS ASOCIADOS CON SU USO, INCLUYENDO PERO NO LIMITADO A LOS RIESGOS DE LOS ERRORES DEL PROGRAMA, DA√ëOS AL EQUIPO, P√âRDIDA DE DATOS O PROGRAMAS DE SOFTWARE, O FALTA DE DISPONIBILIDAD O DE LA INTERRUPCI√ìN DE LAS OPERACIONES."; break;
+		
+		//MVC
+		case "ZanPHP implements one of the design patterns used today by most web development frameworks. This pattern, referred to as MVC (Model View Controller), this means that basically the development is divided into 3 main parts: a model, a view and a controller. The following explains each concept in the MVC.": return "ZanPHP implementa uno de los patrones de dise√±o m√°s utilizados en la actualidad por la mayor√≠a de frameworks de desarrollo web. Este patr√≥n, denominado: MVC, por sus siglas en ingl√©s (Model View Controller), esto quiere decir que b√°sicamente el desarrollo se divide en 3 partes fundamentales: un modelo, una vista y un controlador. A continuaci√≥n se explicar√° cada concepto del MVC."; break;
+		case "This class will contain all the functions entrusted to interact with the business strategy of our application and therefore the handling of data, in more technical terms, will carry out all treatment on our application data handle (queries , inserts, updates and deleted). All these functions must be requested by either the driver or the other depending on the model, as the case may be.": return "Esta clase contendr√° todas aquellas funciones encargadas de interactuar con la estrategia de negocio de nuestra aplicaci√≥n y por lo tanto con el manejo de datos; en palabras m√°s t√©cnicas, se encargar√° de realizar todo el tratamiento sobre los datos que nuestra aplicaci√≥n manejar√° (consultas, inserciones, actualizaciones y bajas). Todas estas funciones deben de ser requeridas ya sea por el controlador o por otra funci√≥n del modelo, como puede ser el caso."; break;
+		case "Model": return "Modelo"; break;
+		case "View": return "Vista"; break;
+		case "Controller": return "Controlador"; break;
+		case "The views are responsible for displaying data to the user, but can also be used to request data, of course, this according to what needs to be done. In the MVC applied to web development can be described as responsible for rendering HTML data.": return "Las vistas son las encargadas de mostrar los datos al usuario, aunque tambi√©n puede ser utilizadas para requerir datos, claro, esto en funci√≥n a lo que se necesite hacer. En el MVC aplicado a desarrollo web, se pueden describir como el HTML encargado de mostrar los datos."; break;
+		case "This class is the administrator of the application flow, is responsible for receiving user requests, identify, process, send call the methods of the model and return data to the user through a view.": return "Esta clase es el administrador del flujo de la aplicaci√≥n, se encarga de recibir las peticiones del usuario, identificarlas, procesarlos, mandar a llamar a los m√©todos del modelo necesarias y retornar los datos al usuario por medio de una vista."; break;
+		case "In ZanPHP the MVC applies within each application, you must create two files in the folder of the application: model.application.php controller.application.php and also the views should be within the \"views\" of each application , you must be named using the following convention: view.myview.php": return "En ZanPHP, el MVC aplica dentro de cada aplicaci√≥n, se deben crear dos archivos dentro de la carpeta de la aplicaci√≥n: controller.application.php y model.application.php, asimismo las vistas deber√°n estar dentro del directorio \"views\" de cada aplicaci√≥n, est√°s deber√°n ser nombradas utilizando la siguiente convenci√≥n: view.myview.php"; break;
+		
+		//Structure
+		case "File's Structure": return "Estructura de archivos"; break;
+		case "ZanPHP consists of 3 main directories, which are: Applications, core and lib. Each with different purposes. The following explains the purpose of each of these directories.": return ""; break;
+		case "Applications": return "Aplicaciones"; break;
+		case "This directory is one that contains all the applications developed with ZanPHP.": return "Este directorio es el que contiene todas las aplicaciones desarrolladas con ZanPHP."; break;
+		case "The \"core\" directory, is the most important of ZanPHP includes the configuration file of the site to develop as well as the framework classes that support the architecture itself, translations, along with the functions (helpers) that the framework we offers to do the heavy lifting.": return "El directorio \"Core\" es el m√°s importante de ZanPHP, pues en el se encuentran los archivos de configuraci√≥n del sitio a desarrollar, as√≠, como las clases importantes del framework que soportan la arquitectura del mismo, las traducciones, as√≠ como todas las funciones (helpers) que el framework nos ofrece para realizar el trabajo pesado."; break;
+		case "In this directory you will find different types of files, among them: style sheets, external libraries, images, templates, and uploaded files for each application.": return "En este directorio se encuentran diferentes tipos de archivos, entre los que destacan: hojas de estilo, librer√≠as externas, plantillas, im√°genes, as√≠ como los archivos subidos por cada aplicaci√≥n."; break;
+		
+		//Configuration
+		case "ZanPHP requires slightly configuration to make it work properly for it, you have to edit 2 files in /core/config, these are: config.constants.php and config.database.php": return "ZanPHP requiere de una ligera configuraci√≥n para que todo funcione correctamente, para ello, se tienen que editar los 2 archivos ubicados en /core/config, estos son: config.constants.php y config.database.php"; break;
+		case "Note that the configuration is based on PHP constants, and according to these values ‚Äã‚Äãis set as the operation of the framework.": return "Cabe destacar que la configuraci√≥n se basa en constantes de PHP, y de acuerdo a dichos valores es como se configura el funcionamiento del framework."; break;
+		case "The first configuration file to analyze is: config.database.php, once the file is open you can see that this is the configuration needed to connect to the database to be used by the site. This file allows us to modify the constants for 2 areas of work, local work, or working remotely. The constants are:": return "El primer archivo de configuraci√≥n a analizar ser√°: config.database.php, una vez abierto el archivo se puede observar que se trata de la configuraci√≥n necesaria para conectar con la base de datos que ser√° utilizada por el sitio. Este archivo nos permite modificar las constantes para 2 √°mbitos de trabajo, el trabajo local, o el trabajo remoto. Las constantes son las siguientes:"; break;
+		case "The second configuration file, will all those config.constants.php constant for the operation of our site, that is general constant, noting that there are some important constants configured for the proper functioning of the site and the framework, these include:": return "El segundo archivo de configuraci√≥n, config.constants.php tendr√° todas aquellas constantes necesarias para el funcionamiento de nuestro sitio, es decir constantes generales, destacando, que existen algunas constantes importantes a configurar para el correcto funcionamiento del sitio y del framework, entre ellas est√°n:"; break;
+		case "allows us to specify the database driver to use.": return "nos permite especificar el controlador de base de datos a utilizar."; break;
+		case "allows us to configure the host where the database server (usually localhost).": return "nos permite configurar el host donde se encuentra el servidor de base de datos (usualmente es localhost)"; break;
+		case "the user to connect to the database.": return "el usuario para conectarnos a la base de datos."; break;
+		case "password to connect to the database.": return "la contrase√±a para conectarnos a la base de datos."; break;
+		case "the name of the database to which we will connect.": return "el nombre de la base de datos a la cual nos vamos a conectar."; break;
+		case "database port.": return "el puerto de conexi√≥n."; break;
+		case "the prefix our tables have.": return "el prefijo que nuestras tablas tendr√°n."; break;
+		case "": return ""; break;
+		case "": return ""; break;
+		case "": return ""; break;
+		
+		case "Basic Info": return "Informaci√≥n B√°sica"; break;
 		case "Server Requirements": return "Requerimientos del Servidor"; break;
 		case "License Agreement": return "Licencia de Uso"; break;
-		case "Credits": return "CrÈditos"; break;
-		case "Installation": return "InstalaciÛn"; break;
+		case "Credits": return "Cr√©ditos"; break;
+		case "Installation": return "Instalaci√≥n"; break;
 		case "Downloading ZanPHP v.1.0": return "Descargar ZanPHP v.1.0"; break;
-		case "Credits": return "CrÈditos"; break;
+		case "Credits": return "Cr√©ditos"; break;
 		case "Instructions": return "Instrucciones"; break;
-		case "Troubleshooting": return "SoluciÛn de Problemas"; break;
-		case "Introduction": return "IntroducciÛn"; break;
+		case "Troubleshooting": return "Soluci√≥n de Problemas"; break;
+		case "Introduction": return "Introducci√≥n"; break;
 		case "Getting Started": return "Primeros Pasos"; break;
 		case "Supported Features": return "Compatibilidad"; break;
 		case "Model View Controller": return "Modelo Vista Controlador"; break;
 		case "General Topics": return "Temas Generales"; break;
 		case "File's Structure": return "Estructura de Archivos"; break;
-		case "Configuration": return "ConfiguraciÛn"; break;
+		case "Configuration": return "Configuraci√≥n"; break;
 		case "Databases": return "Bases de Datos"; break;
 		case "Applications": return "Aplicaciones"; break;
 		case "Controllers": return "Controladores"; break;
 		case "Views": return "Vistas"; break;
 		case "Models": return "Modelos"; break;
 		case "Translations": return "Traducciones"; break;
-		case "Debugging": return "DepuraciÛn"; break;
-		case "Libraries": return "LibrerÌas"; break;
-		case "Scripts": return "CÛdigos"; break;
+		case "Debugging": return "Depuraci√≥n"; break;
+		case "Libraries": return "Librer√≠as"; break;
+		case "Scripts": return "C√≥digos"; break;
 		case "Templates": return "Plantillas"; break;
 		case "Style Sheets": return "Hojas de Estilo"; break;
-		case "Themes": return "DiseÒos"; break;
+		case "Themes": return "Dise√±os"; break;
 		case "Classes Reference": return "Referencia de las Clases"; break;
 		case "Database Class": return "Clase Database"; break;
 		case "Db Class": return "Clase Db"; break;
@@ -82,23 +135,23 @@ function translation($text) {
 		case "Time Helper": return "Ayudante Time"; break;
 		case "Validations Helper": return "Ayudante Validations"; break;
 		case "Web Helper": return "Ayudante Web"; break;
-		case "Parameters": return "Par·metros"; break;
+		case "Parameters": return "Par√°metros"; break;
 		case "Return": return "Retorna"; break;
-		case "void": return "vacÌo"; break;
+		case "void": return "vac√≠o"; break;
 	}
 	
 	//Helpers
 	if($text === "Parameters") {
-		return "Par·metros";	
+		return "Par√°metros";	
 	} elseif($text === "Return") {
 		return "Retorna";	
 	} elseif($text === "void") {
-		return "vacÌo";	
+		return "vac√≠o";	
 	}
 
 	//Bienvenida
 	if($text === "ZanPHP User Guide Version 1.0") {
-		return "GuÌa de usuario de ZanPHP versiÛn 1.0";	
+		return "Gu√≠a de usuario de ZanPHP versi√≥n 1.0";	
 	} elseif($text === "Home") {
 		return "Portada";	
 	} elseif($text === "Welcome") {
@@ -114,16 +167,16 @@ function translation($text) {
 	} elseif($text === "Helpers") {
 		return "Asistentes";	
 	} elseif($text === "Welcome to the ZanPHP version 1.0 User's Guide") {
-		return "Bienvenido a la GuÌa de usuario de ZanPHP versiÛn 1.0";
+		return "Bienvenido a la Gu√≠a de usuario de ZanPHP versi√≥n 1.0";
 	} elseif($text === "Table of Contents") {
 		return "Tabla de Contenidos";
 	}
 	
 	//Alerts Helper
 	if($text === "The Helper Alerts contains the Standard errors and confirmations from the Framework to use over the applications") {
-		return "Esta funciÛn contiene los errores y confirmaciones configurados por defecto en el Framework";	
+		return "Esta funci√≥n contiene los errores y confirmaciones configurados por defecto en el Framework";	
 	} elseif($text === "This function shows an Alert to Notify an Event") {
-		return "Esta funciÛn muestra una Alerta para Notificar";	
+		return "Esta funci√≥n muestra una Alerta para Notificar";	
 	} elseif($text === "You are able to embed the message returned into a URL") {
 		return "Es posible embeber el mensaje retornado dentro de una URL";	
 	}
@@ -136,76 +189,76 @@ function translation($text) {
 	} elseif($text === "Loading this Helper") {
 		return "Cargando este Asistente";
 	} elseif($text === "This helper is loaded using the following code") {
-		return "Este asistente es cargado usando el siguiente cÛdigo";
+		return "Este asistente es cargado usando el siguiente c√≥digo";
 	} elseif($text === "The following functions are available") {
-		return "Las siguientes funciones est·n disponibles";
+		return "Las siguientes funciones est√°n disponibles";
 	} elseif($text === "Returns true if the array is a double array, false if only is a simple array") {
 		return "Retorna verdadero si el arreglo es una matriz, falso si solo es un simple vector";
 	}
 	
 	//Autoload Helper
 	if($text === "The Helper Autoload contains an implementation of the native PHP function __autoload()") {
-		return "El Asistente Autoload contiene una implementaciÛn de la funciÛn nativa de PHP __autoload()";	
+		return "El Asistente Autoload contiene una implementaci√≥n de la funci√≥n nativa de PHP __autoload()";	
 	} elseif($text === "This function is automatically called in case you are trying to use a class/interface which hasn't been defined yet") {
-		return "Esta funciÛn es llamada autom·ticamente cuando se intenta usar una clase/interfaz que no ha sido definida";	
+		return "Esta funci√≥n es llamada autom√°ticamente cuando se intenta usar una clase/interfaz que no ha sido definida";	
 	}
 	
 	//BenchMark Helper
 	if($text === "This function sets the Benchmark Start Time") {
-		return "Esta funciÛn configura el tiempo Inicial del Punto de Referencia (BenchMark)";	
+		return "Esta funci√≥n configura el tiempo Inicial del Punto de Referencia (BenchMark)";	
 	} elseif($text === "This function returns the Benchmark Final Time") {
-		return "Esta funciÛn retorna el tiempo Final del Punto de Referencia (BenchMark)";	
+		return "Esta funci√≥n retorna el tiempo Final del Punto de Referencia (BenchMark)";	
 	}
 	
 	//Browser Helper
 	if($text === "The Helper Browser allows to detect the User's Browser") {
 		return "El Asistente Browser permite detectar el navegardor utilizado por el Usuario";	
 	} elseif($text === "This function provides the Browser String given by the User Agent from User's Browser") {
-		return "Esta funciÛn retorna en forma de Cadena el Nombre del Navegador que es provista por el Agente de Usuario del mismo";	
+		return "Esta funci√≥n retorna en forma de Cadena el Nombre del Navegador que es provista por el Agente de Usuario del mismo";	
 	}
 	
 	
 	//Debugging Helper
 	if($text === "The Helper Debugging contains functions for debugging PHP code") {
-		return "El Asistente Debugging contiene funciones para depurar cÛdigo PHP";	
+		return "El Asistente Debugging contiene funciones para depurar c√≥digo PHP";	
 	} elseif($text === "This function is equals to PHP function die()") {
-		return "Esta funciÛn es equivalente a la funciÛn die() de PHP";	
+		return "Esta funci√≥n es equivalente a la funci√≥n die() de PHP";	
 	} elseif($text === "This function is equals to <strong>die(var_dump(\$var))</strong> functions with <strong>&lt;pre&gt;</strong> tag") {
-		return "Esta funciÛn es equivalente a usar las funciones <strong>die(var_dump(\$var))</strong> con la etiqueta <strong>&lt;pre&gt;</strong>";	
+		return "Esta funci√≥n es equivalente a usar las funciones <strong>die(var_dump(\$var))</strong> con la etiqueta <strong>&lt;pre&gt;</strong>";	
 	} elseif($text === "If you want use print_r() function and did not truncate the script, You need to change some extra values on the parameters") {
-		return "Si desea usar la funciÛn print_r() y no truncar el script, necesita cargar algunos par·metros extra";	
+		return "Si desea usar la funci√≥n print_r() y no truncar el script, necesita cargar algunos par√°metros extra";	
 	} 
 		
 	//Email Helper
 	if($text === "The Helper Email allows you to send an Email") {
 		return "El Helper Email permite enviar un Email";
 	} elseif($text === "This function sets and sends the Email") {
-		return "Esta funciÛn configura y envÌa un email";	
+		return "Esta funci√≥n configura y env√≠a un email";	
 	} 
 	
 	//Form Helper
 	if($text === "This function sets a specific &lt;input /&gt; type Checkbox tag and its attributes") {
-		return "Esta funciÛn configura una etiqueta &lt;input /&gt; de tipo Checkbox y sus atributos ";	
+		return "Esta funci√≥n configura una etiqueta &lt;input /&gt; de tipo Checkbox y sus atributos ";	
 	} elseif($text === "This function sets a &lt;p&gt; tag to label a field from a form") {
-		return "Esta funciÛn configura una etiqueta &lt;p&gt; para rotular el campo de una formulario";	
+		return "Esta funci√≥n configura una etiqueta &lt;p&gt; para rotular el campo de una formulario";	
 	} elseif($text === "You can set an anchor to the Field Name") {
 		return "Puede configurar un Ancla al Nombre del Campo";	
 	} elseif($text === "This function sets a &lt;input /&gt; tag with a custom attributes") {
-		return "Esta funciÛn configura un etiqueta &lt;input /&gt; con atributos personalizados";	
+		return "Esta funci√≥n configura un etiqueta &lt;input /&gt; con atributos personalizados";	
 	} elseif($text === "You can set any attribute to the &lt;input /&gt; tag, even its type") {
 		return "Puede configurar cualquier atributo a la etiqueta &lt;input /&gt;, incluso su tipo";	
 	} elseif($text === "This function sets a simple &lt;label&gt; tag and its -for- attribute") {
-		return "Esta funciÛn configura una etiqueta &lt;label&gt; simple y su atributo -for- ";	
+		return "Esta funci√≥n configura una etiqueta &lt;label&gt; simple y su atributo -for- ";	
 	} elseif($text === "This function sets an &lt;input /&gt; type Radio tag and its attributes") {
-		return "Esta funciÛn configura una etiqueta &lt;input /&gt; de tipo Radio y sus atributos";	
+		return "Esta funci√≥n configura una etiqueta &lt;input /&gt; de tipo Radio y sus atributos";	
 	} elseif($text === "This function sets a &lt;select&gt; tag, its attributes and its &lt;option&gt; tags") {
-		return "Esta funciÛn configura una etiqueta &lt;select&gt; sus atributos y sus etiquetas &lt;option&gt;";	
+		return "Esta funci√≥n configura una etiqueta &lt;select&gt; sus atributos y sus etiquetas &lt;option&gt;";	
 	} elseif($text === "You can set a single &lt;option&gt; tag with the attribute -selected- and pass it into the &lt;select&gt; tag") {
 		return "Puede configurar una sola etiqueta &lt;option&gt; y su atributo -selected- y pasarla dentro de la etiqueta &lt;select&gt;";	
 	} elseif($text === "This function sets a &lt;textarea&gt; tag and its attributes") {
-		return "Esta funciÛn configura una etiqueta &lt;textarea&gt; y sus atributos";	
+		return "Esta funci√≥n configura una etiqueta &lt;textarea&gt; y sus atributos";	
 	} elseif($text === "These functions Set a Basic Form Structure") {
-		return "Estas funciones configurar la Estructura B·sica de un Formulario";	
+		return "Estas funciones configurar la Estructura B√°sica de un Formulario";	
 	}
 	
 	//HTML Helper
@@ -224,7 +277,7 @@ function translation($text) {
 	} elseif($text === "Sets an &lt;div&gt; tag") {
 		return "Configura una etiqueta &lt;div&gt;";	
 	} elseif($text === "Sets a &lt;!DOCTYPE&gt; declaration") {
-		return "Configura una declaraciÛn &lt;!DOCTYPE&gt;";	
+		return "Configura una declaraci√≥n &lt;!DOCTYPE&gt;";	
 	} elseif($text === "Converts all HTML entities to its respective characteres from a string") {
 		return "Convierte todas las entidades HTML de una cadena a sus caracteres correspondientes";	
 	} elseif($text === "Sets a &lt;h1&gt; tag") {
@@ -259,159 +312,159 @@ function translation($text) {
 	
 	//i18n Helper
 	if($text === "The Helper i18n contains functions of Internationalization") {
-		return "El Ayudante i18n contiene funciones de InternacionalizaciÛn";	
+		return "El Ayudante i18n contiene funciones de Internacionalizaci√≥n";	
 	} elseif($text === "This function returns the translation of a specific text") {
-		return "Esta funciÛn retorna la traducciÛn de un texto especÌfico";	
+		return "Esta funci√≥n retorna la traducci√≥n de un texto espec√≠fico";	
 	} elseif($text === "This function returns the standard XML language Abbreviation") {
-		return "Esta funciÛn retorna la Abreviatura de lenguaje XML est·ndar";	
+		return "Esta funci√≥n retorna la Abreviatura de lenguaje XML est√°ndar";	
 	} elseif($text === "You can set the XML language Abbreviation and get the full word") {
 		return "Puede pasar la Abreviatura XML y obtener la palabra completa";	
 	} elseif($text === "This function returns the default Language") {
-		return "Esta funciÛn retorna el Lenguaje default";	
+		return "Esta funci√≥n retorna el Lenguaje default";	
 	} elseif($text === "You can also get the standard XML Abbreviation") {
-		return "Puede tambiÈn obtener la Abreviatura XML est·ndar";	
+		return "Puede tambi√©n obtener la Abreviatura XML est√°ndar";	
 	} elseif($text === "This function defines if a specific word is a standard XML language Abbrevation") {
-		return "Esta funciÛn define si una palabra es una Abreviatura XML est·ndar de un Lenguaje";	
+		return "Esta funci√≥n define si una palabra es una Abreviatura XML est√°ndar de un Lenguaje";	
 	} elseif($text === "This function returns the translation of a specific Language Word") {
-		return "Esta funciÛn retorna la traducciÛn de la palabra que representa un lenguaje";	
+		return "Esta funci√≥n retorna la traducci√≥n de la palabra que representa un lenguaje";	
 	}  
 	
 	//Inflect Helper
 	if($text === "The Helper inflect contains functions to inflect words") {
 		return "El Ayudante Inflect contiene funciones para inflexionar palabras";	
 	} elseif($text === "This function returns the plural form of a Word") {
-		return "Esta funciÛn retorna la forma plural de una palabra";	
+		return "Esta funci√≥n retorna la forma plural de una palabra";	
 	} elseif($text === "This function returns the singular form of a Word") {
-		return "Esta funciÛn retorna la forma singular de una palabra";	
+		return "Esta funci√≥n retorna la forma singular de una palabra";	
 	}
 
 	//Router Helper
 	if($text === "The Helper Router contains functions to manipulate URLs") {
 		return "El Ayudante Router contiene funciones para manipular URLs";	
 	} elseif($text === "Executes the run() method which is inside all application controllers") {
-		return "Ejecuta el mÈtodo run() contenido en el controlador de cada una de las aplicaciones";	
+		return "Ejecuta el m√©todo run() contenido en el controlador de cada una de las aplicaciones";	
 	} elseif($text === "This function returns a string containing a specific URL segment from route()") {
-		return "Esta funciÛn retorna una cadena con un segmento de URL especÌfico provista por el mÈtodo route()";	
+		return "Esta funci√≥n retorna una cadena con un segmento de URL espec√≠fico provista por el m√©todo route()";	
 	} elseif($text === "This function returns an Array from \$_SERVER[\"REQUEST_URI\"] exploding each position with slashes") {
-		return "Esta funciÛn retorna un Vector provisto por \$_SERVER[\"REQUEST_URI\"] separando cada posiciÛn con una diagonal";	
+		return "Esta funci√≥n retorna un Vector provisto por \$_SERVER[\"REQUEST_URI\"] separando cada posici√≥n con una diagonal";	
 	} elseif($text === "This function returns a URL") {
-		return "Esta funciÛn retorna una URL";	
+		return "Esta funci√≥n retorna una URL";	
 	}
 	
 	//Security Helper
 	if($text === "The Helper Security contains security related functions") {
 		return "El Ayudante Security contiene funciones relacionadas con seguridad";	
 	} elseif($text === "Generates and returns a unique code based on a timestamp") {
-		return "Genera y retorna un cÛdigo ˙nico basado en la hora y fecha";	
+		return "Genera y retorna un c√≥digo √∫nico basado en la hora y fecha";	
 	} elseif($text === "You can define the large of the returned string -no longer than a md5 hash- and if it is uppercased") {
-		return "Puede definir la longitud de la cadena retornada -no mayor a la de un hash md5- y si est· o no en may˙sculas";	
+		return "Puede definir la longitud de la cadena retornada -no mayor a la de un hash md5- y si est√° o no en may√∫sculas";	
 	} elseif($text === "This function escapes potentially harmful string fragments in a string to avoid SQL Injections") {
-		return "Esta funciÛn retorna escapa fragmentos de cadena potencialmente peligrosas dentro de una cadena para evitar, por ejemplo, inyecciones SQL";	
+		return "Esta funci√≥n retorna escapa fragmentos de cadena potencialmente peligrosas dentro de una cadena para evitar, por ejemplo, inyecciones SQL";	
 	} elseif($text === "This function returns an encripted string") {
-		return "Esta funciÛn retorna una cadena encriptada";	
+		return "Esta funci√≥n retorna una cadena encriptada";	
 	} elseif($text === "You can define the encripting strong") {
 		return "Puede definir la fuerza del cifrado";	
 	} elseif($text === "This function returns the User's IP") {
-		return "Esta funciÛn retorna la direcciÛn IP del Usuario";	
+		return "Esta funci√≥n retorna la direcci√≥n IP del Usuario";	
 	} elseif($text === "This function pings a URL") {
-		return "Esta funciÛn envÌa un ping a una URL";	
+		return "Esta funci√≥n env√≠a un ping a una URL";	
 	} elseif($text === "This function redirect to a URL") {
-		return "Esta funciÛn redirecciona hacia una URL";	
+		return "Esta funci√≥n redirecciona hacia una URL";	
 	}
 	
 	//Security Helper
 	if($text === "The Helper Sessions contains sessions and cookies related functions") {
-		return "El Ayudante Sessions contiene funciones relacionadas con Variables de SesiÛn y Cookies";	
+		return "El Ayudante Sessions contiene funciones relacionadas con Variables de Sesi√≥n y Cookies";	
 	} elseif($text === "Removes a Cookie") {
 		return "Elimina una Cookie";	
 	} elseif($text === "This function unsets all started session variables") {
-		return "Esta funciÛn remueve todas las variables de sesiÛn";	
+		return "Esta funci√≥n remueve todas las variables de sesi√≥n";	
 	} elseif($text === "This function sets a cookie") {
-		return "Esta funciÛn crea una Cookie";	
+		return "Esta funci√≥n crea una Cookie";	
 	} elseif($text === "This function sets a session variable") {
-		return "Esta funciÛn crea una variable de sesiÛn";	
+		return "Esta funci√≥n crea una variable de sesi√≥n";	
 	} elseif($text === 'This Function returns a $_SESSION index variable value') {
-		return "Esta funciÛn devuelve el valor de una variable de sesiÛn";	
+		return "Esta funci√≥n devuelve el valor de una variable de sesi√≥n";	
 	}
 	
 	#Classes
 	if($text === "Loading this Class") {
 		return "Cargando esta clase";	
 	} elseif($text === "This Class is loaded using the following code") {
-		return "Esta clase es cargada usando el siguiente cÛdigo";
+		return "Esta clase es cargada usando el siguiente c√≥digo";
 	} elseif($text === "Inheritance") {
 		return "Herencia";
 	} elseif($text === "Private Attributes") {
 		return "Atributos Privados";
 	} elseif($text === "Public Attributes") {
-		return "Atributos P˙blicos";
+		return "Atributos P√∫blicos";
 	} elseif($text === "Private Methods") {
-		return "MÈtodos Privados";
+		return "M√©todos Privados";
 	} elseif($text === "Public Methods") {
-		return "MÈtodos P˙blicos";
+		return "M√©todos P√∫blicos";
 	} elseif($text === "has not Private Attributes") {
 		return "no posee Atributos Privados";
 	} elseif($text === "has not Public Attributes") {
-		return "no posee Atributos P˙blicos";
+		return "no posee Atributos P√∫blicos";
 	}  elseif($text === "has not Private Methods") {
-		return "no posee MÈtodos Privados";
+		return "no posee M√©todos Privados";
 	}  elseif($text === "has not Public Methods") {
-		return "no posee MÈtodos P˙blicos";
+		return "no posee M√©todos P√∫blicos";
 	}
 	
 	
 	//Database Class
 	if($text === "This class selects the database driver to use and loads its respective methods") {
-		return "Esta clase selecciona el manejador de base de datos a usar y carga sus mÈtodos";	
+		return "Esta clase selecciona el manejador de base de datos a usar y carga sus m√©todos";	
 	} elseif($text === "Contains the count of records") {
-		return "Contiene la cantidad numÈrica de registros";	
+		return "Contiene la cantidad num√©rica de registros";	
 	} elseif($text === "Contains the SQL query") {
 		return "Contiene la consulta SQL";	
 	} elseif($text === "Contains the database's connection") {
-		return "Contiene la conexiÛn a la base de datos";	
+		return "Contiene la conexi√≥n a la base de datos";	
 	} elseif($text === "Contains the database's driver object") {
 		return "Contiene el objeto del manejador de base de datos";	
 	} elseif($text === "Establishes Database Connection") {
-		return "Establece la conexiÛn a la base de datos";	
+		return "Establece la conexi√≥n a la base de datos";	
 	} elseif($text === "Performs a custom SQL query") {
 		return "Realiza una consulta SQL personalizada";	
 	} elseif($text === "Performs a SQL INSERT") {
-		return "Realiza una inserciÛn SQL";	
+		return "Realiza una inserci√≥n SQL";	
 	} elseif($text === "Performs a SQL DELETE") {
-		return "Realiza una eliminaciÛn SQL (elimina un registro)";	
+		return "Realiza una eliminaci√≥n SQL (elimina un registro)";	
 	} elseif($text === "Performs a SQL DELETE by specific field and value") {
-		return "Realiza una eliminaciÛn SQL mediante un campo-par·metro especÌfico";	
+		return "Realiza una eliminaci√≥n SQL mediante un campo-par√°metro espec√≠fico";	
 	} elseif($text === "Performs a SQL DELETE by a SQL Query") {
-		return "Realiza una eliminaciÛn SQL por medio de una consulta SQL";	
+		return "Realiza una eliminaci√≥n SQL por medio de una consulta SQL";	
 	} elseif($text === "Performs a SQL UPDATE by Primary Key") {
-		return "Realiza un actualizaciÛn SQL referenciando una Llave Primaria";	
+		return "Realiza un actualizaci√≥n SQL referenciando una Llave Primaria";	
 	} elseif($text === "Performs a SQL UPDATE based on a SQL query") {
-		return "Realiza un actualizaciÛn SQL basada en una consulta SQL";	
+		return "Realiza un actualizaci√≥n SQL basada en una consulta SQL";	
 	} elseif($text === "Gets the results into an array. It works as a Interface of the fetch() method from any Database Driver") {
-		return "Obtiene los resultados de una consulta dentro de un vector. Funciona como una interfaz del mÈtodo fetch() de cualquiera de los Manejadores de Base de Datos";	
+		return "Obtiene los resultados de una consulta dentro de un vector. Funciona como una interfaz del m√©todo fetch() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Gets the number of rows found by a query. It works as a Interface of the rows() method from any Database Driver") {
-		return "Obtiene el n˙mero de registros encontrados por una consulta. Funciona como una interfaz del mÈtodo rows() de cualquiera de los Manejadores de Base de Datos";	
+		return "Obtiene el n√∫mero de registros encontrados por una consulta. Funciona como una interfaz del m√©todo rows() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Gets the last inserted ID. It works as a Interface of the insertID() method from any Database Driver") {
-		return "Obtiene el ˙ltimo ID insertado. Funciona como una interfaz del mÈtodo insertID() de cualquiera de los Manejadores de Base de Datos";	
+		return "Obtiene el √∫ltimo ID insertado. Funciona como una interfaz del m√©todo insertID() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Frees memory. It works as a Interface of the free() method from any Database Driver") {
-		return "Libera memoria. Funciona como una interfaz del mÈtodo free() de cualquiera de los Manejadores de Base de Datos";	
+		return "Libera memoria. Funciona como una interfaz del m√©todo free() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Closes the current database connection. It works as a Interface of the close() method from any Database Driver") {
-		return "Cierra la conexiÛn de base de datos actual. Funciona como una interfaz del mÈtodo close() de cualquiera de los Manejadores de Base de Datos";	
+		return "Cierra la conexi√≥n de base de datos actual. Funciona como una interfaz del m√©todo close() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Begins a transaction. It works as a Interface of the begin() method from any Database Driver which supports Transactions") {
-		return "Comienza una transacciÛn. Funciona como una interfaz del mÈtodo begin() de cualquiera de los Manejadores de Base de Datos";	
+		return "Comienza una transacci√≥n. Funciona como una interfaz del m√©todo begin() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Saves changes. It works as a Interface of the commit() method from any Database Driver which supports Transactions") {
-		return "Salva los cambios. Funciona como una interfaz del mÈtodo commit() de cualquiera de los Manejadores de Base de Datos";	
+		return "Salva los cambios. Funciona como una interfaz del m√©todo commit() de cualquiera de los Manejadores de Base de Datos";	
 	} elseif($text === "Ignore changes. It works as a Interface of the rollBack() method from any Database Driver which supports Transactions") {
-		return "Ignora los cambios. Funciona como una interfaz del mÈtodo rollBack() de cualquiera de los Manejadores de Base de Datos";	
+		return "Ignora los cambios. Funciona como una interfaz del m√©todo rollBack() de cualquiera de los Manejadores de Base de Datos";	
 	}
 	
 	//Db Class
 	if($text === "This class allows the creation of queries to the database") {
-		return "Esta clase permite la creaciÛn de consultas y la manipulaciÛn de una base de datos";	
+		return "Esta clase permite la creaci√≥n de consultas y la manipulaci√≥n de una base de datos";	
 	} elseif($text === "Contains the primary key field") {
 		return "Contiene el campo Llave primaria";	
 	} elseif($text === "Insert count for transactions") {
-		return "Contador de Inserciones por transacciÛn";	
+		return "Contador de Inserciones por transacci√≥n";	
 	} elseif($text === "Contains the query string") {
 		return "Contiene la cadena de consulta";	
 	} elseif($text === "Contains the name of the table") {
@@ -429,27 +482,27 @@ function translation($text) {
 	} elseif($text === "Sets the table and fields to perform a SQL query") {
 		return "Configura la tabla y los campos de una consulta SQL";	
 	} elseif($text === "Sets values to perform an insert, update or query") {
-		return "Configura los valores para realizar una inserciÛn, actualizaciÛn o consulta SQL";	
+		return "Configura los valores para realizar una inserci√≥n, actualizaci√≥n o consulta SQL";	
 	} elseif($text === "Calls ZP_Database::insert to perform an SQL insert") {
-		return "Invoca el mÈtodo ZP_Database::insert para realizar una inserciÛn SQL";	
+		return "Invoca el m√©todo ZP_Database::insert para realizar una inserci√≥n SQL";	
 	} elseif($text === "Calls ZP_Database::update to perform an SQL update by primary key") {
-		return "Invoca el mÈtodo ZP_Database::update para realizar una actualizaciÛn SQL mediante una Llave Primaria";	
+		return "Invoca el m√©todo ZP_Database::update para realizar una actualizaci√≥n SQL mediante una Llave Primaria";	
 	} elseif($text === "Calls ZP_Database::updateBySQL to perform an update by a SQL query") {
-		return "Invoca el mÈtodo ZP_Database::updateBySQL para realizar una actualizaciÛn mediante una consulta SQL";	
+		return "Invoca el m√©todo ZP_Database::updateBySQL para realizar una actualizaci√≥n mediante una consulta SQL";	
 	} elseif($text === "Calls ZP_Database::delete to perform a SQL delete by primary key") {
-		return "Invoca el mÈtodo ZP_Database::delete para realizar una eliminaciÛn SQL por medio de una Llave Primaria";	
+		return "Invoca el m√©todo ZP_Database::delete para realizar una eliminaci√≥n SQL por medio de una Llave Primaria";	
 	} elseif($text === "Calls ZP_Database::deleteBy to perform a SQL delete by specific field") {
-		return "Invoca el mÈtodo ZP_Database::deleteBy para realizar una eliminaciÛn SQL por medio de un campo especÌfico";	
+		return "Invoca el m√©todo ZP_Database::deleteBy para realizar una eliminaci√≥n SQL por medio de un campo espec√≠fico";	
 	} elseif($text === "Calls ZP_Database::deleteBySQL to perform a delete by a SQL query") {
-		return "Invoca el mÈtodo ZP_Database::deleteBySQL para realizar una eliminaciÛn SQL mediante una consulta SQL";	
+		return "Invoca el m√©todo ZP_Database::deleteBySQL para realizar una eliminaci√≥n SQL mediante una consulta SQL";	
 	} elseif($text === "Decides whether the system deletes, updates or inserts") {
 		return "Decide si el sistema elimina, actualiza o inserta un registro";	
 	} elseif($text === "Finds a record by primary key") {
 		return "Encuentra un registro por medio de la Llave Primaria";	
 	} elseif($text === "Finds records by a specific field and value") {
-		return "Encuentra registro por medio de un campo y un valor especÌfico";	
+		return "Encuentra registro por medio de un campo y un valor espec√≠fico";	
 	} elseif($text === "Finds the last record") {
-		return "Encuentra el ˙ltimo registro";	
+		return "Encuentra el √∫ltimo registro";	
 	} elseif($text === "Finds the first record") {
 		return "Encuentra el primer registro";	
 	} elseif($text === "Finds all records") {
@@ -477,9 +530,9 @@ function translation($text) {
 	if($text === "This class allows to manipulate emails") {
 		return "Esta clase permite manipular emails";	
 	} elseif($text === "Sets the way the email will be send") {
-		return "Configura el modo por el cual ser· enviado el mail";	
+		return "Configura el modo por el cual ser√° enviado el mail";	
 	} elseif($text === "Sends an Email") {
-		return "EnvÌa un Email";	
+		return "Env√≠a un Email";	
 	}
 	
 	//Files Class
@@ -495,7 +548,7 @@ function translation($text) {
 	
 	//Images Class
 	if($text === "This class allows to manipulate images") {
-		return "Esta clase permite manipular im·genes";	
+		return "Esta clase permite manipular im√°genes";	
 	} elseif($text === "Creates and loads an image") {
 		return "Crea y carga una imagen";
 	} elseif($text === "") {
@@ -505,25 +558,25 @@ function translation($text) {
 	} elseif($text === "") {
 		return "";
 	} elseif($text === "Gets image's width") {
-		return "Obtiene el ancho en pÌxiles de una imagen";
+		return "Obtiene el ancho en p√≠xiles de una imagen";
 	} elseif($text === "Gets image's height") {
-		return "Obtiene la altura en pÌxiles de una imagen";
+		return "Obtiene la altura en p√≠xiles de una imagen";
 	} elseif($text === "Performs a resize based on the image's height") {
-		return "Realiza una redimensiÛn basada en la altura de la imagen";
+		return "Realiza una redimensi√≥n basada en la altura de la imagen";
 	} elseif($text === "Performs a resize based on the image's width") {
-		return "Realiza una redimensiÛn basada en el ancho de la imagen";
+		return "Realiza una redimensi√≥n basada en el ancho de la imagen";
 	} elseif($text === "Performs a scale") {
-		return "Realiza una escalaciÛn sobre la imagen";
+		return "Realiza una escalaci√≥n sobre la imagen";
 	} elseif($text === "Performs a resize") {
-		return "Realiza una redimensiÛn";
+		return "Realiza una redimensi√≥n";
 	} elseif($text === "Resizes an image into a small, medium and original sizes") {
-		return "Redimensiona una imagen en un pequeÒa, mediana y de tamaÒo original";
+		return "Redimensiona una imagen en un peque√±a, mediana y de tama√±o original";
 	}
 	
 	
 	//Load Class
 	if($text === "This class allows to load models, views, controllers, classes, libraries, helpers as well as interact directly with templates") {
-		return "Esta clase permite cargar modelos, vistas, controladores, clases, librerÌas, ayudantes asÌ como interactuar con plantillas";	
+		return "Esta clase permite cargar modelos, vistas, controladores, clases, librer√≠as, ayudantes as√≠ como interactuar con plantillas";	
 	} elseif($text === "This Class is loaded in the load.php file include in the core directory") {
 		return "Esta clase es cargada en el archivo load.php incluido en el directorio core/";
 	} elseif($text === "Contains the array of view") {
@@ -531,19 +584,19 @@ function translation($text) {
 	} elseif($text === "Contains a Templates Object") {
 		return "Contiene un Objecto de tipo Templates";
 	} elseif($text === "Loads the autoload helper, the database configuration file and a Templates Object") {
-		return "Carga el ayudante autoload, el archivo de configuraciÛn de base de datos y un Objecto de tipo Templates";
+		return "Carga el ayudante autoload, el archivo de configuraci√≥n de base de datos y un Objecto de tipo Templates";
 	} elseif($text === "Sets a CSS file from an specific application. It works as an Interface for the CSS method from the Templates class") {
-		return "Configura un archivo CSS desde una aplicaciÛn especÌfica. Funciona como una Interfaz del mÈtodo CSS de la clase Templates";
+		return "Configura un archivo CSS desde una aplicaci√≥n espec√≠fica. Funciona como una Interfaz del m√©todo CSS de la clase Templates";
 	} elseif($text === "Loads an specific application class from the applications/ directory") {
-		return "Carga una clase de una aplicaciÛn especÌfica del directorio applications/ ";
+		return "Carga una clase de una aplicaci√≥n espec√≠fica del directorio applications/ ";
 	} elseif($text === "Loads a configuration file") {
-		return "Carga un archivo de configuraciÛn";
+		return "Carga un archivo de configuraci√≥n";
 	} elseif($text === "Loads a controller") {
 		return "Carga un controlador";
 	} elseif($text === "Loads a core class") {
 		return "Carga una clase del directorio core/";
 	} elseif($text === "Loads a footer template") {
-		return "Carga una plantilla de pie de p·gina";
+		return "Carga una plantilla de pie de p√°gina";
 	} elseif($text === "Loads a header template") {
 		return "Carga una plantilla de encabezado";
 	} elseif($text === "Loads a helper or multiple helper files") {
@@ -551,13 +604,13 @@ function translation($text) {
 	} elseif($text === "Loads a hook or multiple hooks files") {
 		return "Carga uno o varios hooks";
 	} elseif($text === "Sets a JS file from an specific application. It works as an Interface for the js method from the Templates class") {
-		return "Configura un archivo JS desde una aplicaciÛn especÌfica. Funciona como Interfaz del mÈtodo js de la clase Templates";
+		return "Configura un archivo JS desde una aplicaci√≥n espec√≠fica. Funciona como Interfaz del m√©todo js de la clase Templates";
 	} elseif($text === "Loads a language file and sets the translations") {
 		return "Carga un archivo de lenguaje y configura las traducciones";
 	} elseif($text === "Loads a left template") {
 		return "Carga la platilla izquierda";
 	} elseif($text === "Loads a library") {
-		return "Carga una librerÌa";
+		return "Carga una librer√≠a";
 	} elseif($text === "Loads a model") {
 		return "Carga un Modelo";
 	} elseif($text === "Renders and outputs templates") {
@@ -567,16 +620,16 @@ function translation($text) {
 	} elseif($text === "Loads templates") {
 		return "Carga plantillas";
 	} elseif($text === "Sets a theme. It works as an Interface for the theme method from the Templates class") {
-		return "Configura un tema. Funciona como Interfaz del mÈtodo theme de la clase Templates";
+		return "Configura un tema. Funciona como Interfaz del m√©todo theme de la clase Templates";
 	} elseif($text === "Sets a document title. It works as an Interface for the title method from the Templates class") {
-		return "Configura el tÌtulo del documento. Funciona como Interfaz del mÈtodo title de la clase Templates";
+		return "Configura el t√≠tulo del documento. Funciona como Interfaz del m√©todo title de la clase Templates";
 	} elseif($text === "Loads a view") {
 		return "Carga una vista";
 	}
 	
 	//Templates Class
 	if($text === "This class allows to control design templates") {
-		return "Esta clase permite la manipulaciÛn de plantillas de diseÒo";
+		return "Esta clase permite la manipulaci√≥n de plantillas de dise√±o";
 	} elseif($text === "Contains the name of the current theme") {
 		return "Contiene el nombre del tema actual";
 	} elseif($text === "Contains the theme's path") {
@@ -584,11 +637,11 @@ function translation($text) {
 	} elseif($text === "Contains the array of variables") {
 		return "Contiene el arreglo de variables";
 	} elseif($text === "Contains the the header's template title") {
-		return "Contiene el tÌtulo del encabezado de la plantilla";
+		return "Contiene el t√≠tulo del encabezado de la plantilla";
 	} elseif($text === "Contains the CSS's file from an specific application") {
-		return "Contiene el archivo CSS de una aplicaciÛn especÌfica";
+		return "Contiene el archivo CSS de una aplicaci√≥n espec√≠fica";
 	} elseif($text === "Contains the JavaScript's file from an specific application") {
-		return "Contiene el archivo Javascript de una aplicaciÛn especÌfica";
+		return "Contiene el archivo Javascript de una aplicaci√≥n espec√≠fica";
 	} elseif($text === "Loads helpers: array, browser, debugging, forms, html and web") {
 		return "Carga los ayudantes: array, browser, debbuging, form, html and web";
 	} elseif($text === "Sets the current theme") {
@@ -602,9 +655,9 @@ function translation($text) {
 	} elseif($text === "Sets and loads a js's file") {
 		return "Configura y carga un archivo JS";
 	} elseif($text === "Sets header's title") {
-		return "Configura el tÌtulo del encabezado";
+		return "Configura el t√≠tulo del encabezado";
 	} elseif($text === "Gets the header's title") {
-		return "Obtiene el tÌtulo del encabezado";
+		return "Obtiene el t√≠tulo del encabezado";
 	} elseif($text === "") {
 		return "";
 	} elseif($text === "") {

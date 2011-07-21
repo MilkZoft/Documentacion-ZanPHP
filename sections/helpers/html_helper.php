@@ -409,7 +409,7 @@
 			
 			</p>
 		
-		<p class="sub-title">openUl()</p>
+		<p class="sub-title">li()</p>
 
 			<p class="parameters">
 				<?php print __("Parameters"); ?>: openUl(string $ID = NULL, string $class = NULL) <br />
