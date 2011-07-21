@@ -20,255 +20,413 @@
 
 
 	<article>
-		<p class="Title">
+		<p class="title">
 			<?php print __("HTML Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/html.forms.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper HTML contains functions to manipulate HTML elements with PHP"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("html");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">anchor()</p>
+		<p class="sub-title">anchor()</p>
 
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: checkbox($text = NULL, $position = "Right", $name, $value, $ID = NULL, $checked = FALSE, $events = NULL, $disabled = "No"); <br />
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: anchor(string $text, string $URL = NULL, bool $external = FALSE, array $attributes = array()) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text"> 
-				<?php print __("This function sets a specific &lt;input /&gt; type Checkbox tag and its attributes"); ?>. <?php print __("Example"); ?>:
+			<p class="text"> 
+				<?php print __("Sets a &lt;a&gt; tag and its attributes"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
-				print formCheckbox("Option 1", "Left", "option1", "1", "Op1", TRUE, 'onclick="'."alert('Option 1 selected');".'"', TRUE); <br /><br />
+			<p class="code">
 				
-				//Prints: "Option 1 &lt;input id="Op1" name="option1" value="1" type="checkbox" onclick="alert('Option 1 selected');" checked="checked" /&gt; " .<br />						
+				$text = "Link"; <br />
+				$URL = "http://www.example.com"; <br />
+				$attributes = array("id" => "foo", "class" => "bar"); ; <br /><br />
+				
+				print anchor($text, $URL, FALSE, $attributes); <br /><br />
+				
+				//Prints: &lt;a href="http://www.example.com" id="foo" class="bar"&gt; Link &lt;/a&gt;<br />						
 			</p>
 			
-		<p class="SubTitle">formField()</p>
+		<p class="sub-title">body()</p>
 
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: formField($a = NULL, $text, $raquo = TRUE); <br />
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: body(bool $open = TRUE) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
-			<p class="Text">
-				<?php print __("This function sets a &lt;p&gt; tag to label a field from a form"); ?>. <?php print __("Example"); ?>:
+			<p class="text">
+				<?php print __("Sets an &lt;body&gt; opening/closing tag"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
-				print formField(NULL, "Field Name", $raquo = TRUE); <br /><br />
+			<p class="code">
+				print body(TRUE); <br /><br />
+					//Your HTML code here <br /> <br />
+				print body(FALSE);<br /><br />
 				
-				//Prints: &lt;p class="Field"&gt; &raquo; Field Name &lt;/p&gt; .<br />	
+				//Prints: <br />
+					&lt;body&gt;<br />
+						//Your HTML code here <br />
+					&lt;/body&gt; <br />
 				//The parameter $raquo outputs the HTML Entity &amp;raquo; if it is set up as TRUE.					
 			</p>
-			
-			<p class="Text">
-				<?php print __("You can set an anchor to the Field Name"); ?>. <?php print __("Example"); ?>:
-			</p>	
-			
-			<p class="Code">
-				print field("Top", "Field Name", $raquo = TRUE); <br /><br />
 				
-				//Prints: &lt;p class="Field"&gt; &lt;a name="Top"&gt; &raquo; Field Name &lt;/a&gt; &lt;/p&gt; .<br />						
-			</p>
-		
-		<p class="SubTitle">formInput()</p>
+		<p class="sub-title">bold()</p>
 
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: formInput($p = "Yes", $text = NULL, $name = NULL, $value = NULL, $class = "Input", $type = "text", $ID = NULL, $events = NULL, $src = NULL, $raquo = "Yes") <br />
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: bold(string $text, bool $br) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
-			<p class="Text">
-				<?php print __("This function sets a &lt;input /&gt; tag with a custom attributes"); ?>. <?php print __("Example"); ?>:
+			<p class="text">
+				<?php print __("Sets a &lt;span&gt; tag with the CSS Bold property"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
-				print formInput("Yes", "Foo", "bar", NULL, "input", "text", NULL, NULL, NULL, TRUE); <br /><br />
+			<p class="code">
+				$text = "Bolded text"; <br />
+				bold($text, TRUE); <br /><br />
 				
 				//Prints: <br />
 				
-				&lt;p class="Field"&gt; <br /> 
-				&nbsp;&nbsp;&nbsp;&raquo; Foo &lt;br /&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;input id="bar" title="Foo" name="bar" type="text" class="input" /&gt; <br />
-				&lt;/p&gt;<br /><br />
-
-
-				//The parameter $raquo outputs the HTML Entity &amp;raquo; if it is set up as TRUE.					
-			</p>
-			
-			<p class="Text">
-				<?php print __("You can set any attribute to the &lt;input /&gt; tag, even its type"); ?>. <?php print __("Example"); ?>:
-			</p>	
-			
-			<p class="Code">
-				print formInput("Yes", "Foo", "bar", "1", "input", "image", "foo", 'onclick="'."alert('Option 1');".'"', "http://mydomain.com/images/icon.jpg", TRUE); <br /><br />
+				&lt;span class="bold"&gt; Bolded text &lt;/span&gt;
 				
-				//Prints: <br />
-				
-				&lt;p class="Field"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&raquo; Foo &lt;br /&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;input id="foo" title="Foo" name="bar" type="image" class="input" value="1" onclick="alert('Option 1 selected');" src="http://mydomain.com/images/icon.jpg" /&gt; <br />
-				&lt;/p&gt; <br /> <br />
-			
-				//The parameter $raquo outputs the HTML Entity &amp;raquo; if it is set up as TRUE.					
+				&lt;br /&gt; <br />
+				//Note that $br parameter outputs an &lt;br /&gt; tag.					
 			</p>
-			
-		<p class="SubTitle">formLabel()</p>
-
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: label(string $for, string $text, boolean $br = TRUE) <br />
-				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
-			</p>
-			
-			<p class="Text">
-				<?php print __("This function sets a simple &lt;label&gt; tag and its -for- attribute"); ?>. <?php print __("Example"); ?>:
-			</p>	
-			
-			<p class="Code">
-				print formLabel("foo", "Bar", TRUE); <br /><br />
-				
-				//Prints: &lt;label for="foo"&gt;Bar: &lt;/label&gt;<br />						
-			</p>
-		
-		<p class="SubTitle">formRadio()</p>
-
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: radio(string $text = NULL, string $position = "Right", string $name, string $value, string $ID = NULL, boolean $checked = FALSE, string $events = NULL, boolean $disabled = FALSE) <br />
-				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
-			</p>
-			
-			<p class="Text">
-				<?php print __("This function sets an &lt;input /&gt; type Radio tag and its attributes"); ?>. <?php print __("Example"); ?>:
-			</p>	
-			
-			<p class="Code">
-				print formRadio("Foo", "Right", "foo", "bar", "myID", FALSE, NULL, FALSE) <br /><br />
-				
-				//Prints:  &lt;input type="radio" value="bar" name="foo" title="foo" id="myID"&gt; Foo <br />						
-			</p>
-		
-		<p class="SubTitle">formSelect()</p>
-
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: formSelect(boolean $p = TRUE, string $text, string $name, mixed $options, string $class = "Select", string $selected = NULL, string $ID = NULL, string $size = "1", boolean $raquo = TRUE) <br />
-				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
-			</p>
-			
-			<p class="Text">
-				<?php print __("This function sets a &lt;select&gt; tag, its attributes and its &lt;option&gt; tags"); ?>. <?php print __("Example"); ?>:
-			</p>	
-			
-			<p class="Code">
-			
-				// You can set &lt;option&gt; tags (for passing to $options parameter) this way: <br />
-				$options[0]["option"]   = "Foo"; <br />
-				$options[0]["selected"] = TRUE;  <br />
-				$options[0]["value"]    = 1;     <br /> <br />
-				
-				//Additional you can set the "onclick" event setting $options[0]["onClick"] <br /> <br />
-				
-				//Here is another way: <br />
-				$options[1] = array("option" => "Bar", "selected" => FALSE, "value" => 2); <br /> <br />
 					
-				print formSelect(TRUE, "Foo", "bar", $options, "Select", NULL, NULL, "1", TRUE); <br /> <br />					
-				
-				//Prints: <br />
-				//Note: If you don't set the ID @param into the formSelect(), the id attribute is set as $name @param <br />
-				&lt;p class="Field"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&raquo; Foo &lt;br /&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;select id="bar" title="bar" name="bar" size="1" class="select"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1" selected="selected">Foo&lt;/option&gt; <br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2">Bar&lt;/option&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
-				&lt;/p&gt;
+		<p class="sub-title">br()</p>
 
-			</p>
-			
-			<p class="Text">
-				<?php print __("You can set a single &lt;option&gt; tag with the attribute -selected- and pass it into the &lt;select&gt; tag"); ?>. <?php print __("Example"); ?>:
-			</p>	
-			
-			<p class="Code">
-			
-				$option = '&lt;option value="1" selected="selected"&gt;Unique Option&lt;/option&gt;'; <br /> <br />
-				print formSelect(TRUE, "Foo", "bar", NULL, "Select", $option, NULL, "1", TRUE);		  <br /> <br />
-				
-				//Prints: <br />
-				
-				&lt;p class="Field"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&raquo; Foo &lt;br /&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;select id="bar" title="bar" name="bar" size="1" class="Select"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1" selected="selected">Unique Option&lt;/option&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
-				&lt;/p&gt;
-
-			</p>		
-				
-		<p class="SubTitle">formTextarea()</p>
-
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: formTextarea(boolean $p = TRUE, string $text, string $name, string $value = NULL, string $class = "Textarea", string $ID = NULL, int $rows = 25, int $cols = 90, boolean $raquo = TRUE) <br />
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: br(integer $jumps = 1) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
-			<p class="Text">
-				<?php print __("This function sets a &lt;textarea&gt; tag and its attributes"); ?>. <?php print __("Example"); ?>:
+			<p class="text">
+				<?php print __("Sets a &lt;br&gt; tag"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
-				print formTextarea(TRUE, "Foo", "bar", "Default Text", "textarea", "unique-id", 25, 90, TRUE); <br /> <br />
+			<p class="code">
 				
-				&lt;p class="Field"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&raquo; Foo &lt;br /&gt;<br />		
-				&nbsp;&nbsp;&nbsp;&lt;textarea id="unique-id" title="bar" name="bar" rows="25" cols="90" class="Textarea"&gt; Default Text &lt;/textarea&gt; <br />
-				&lt;/p&gt;
-
+				print br(2); <br /><br />
+				
+				//Prints: <br />
+				&lt;br / &gt; &lt;br / &gt;						
 			</p>
 		
-		<p class="SubTitle">formOpen() and formClose()</p>
+		<p class="sub-title">char()</p>
 
-			<p class="Parameters">
-				<?php print __("Parameters"); ?>: formOpen(string $ID = NULL, string $text = NULL, string $action, string $class = "Forms", string $method = "post", string $enctype = "multipart/form-data") <br />
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: char(string $char, integer $repeat = 1) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
-			<p class="Text">
-				<?php print __("These functions Set a Basic Form Structure"); ?>. <?php print __("Example"); ?>:
+			<p class="text">
+				<?php print __("Sets an UTF-8 character"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
-				print formOpen("foo", "Form", "bar.php", "Forms", "post", "multipart/form-data");<br />
-				&nbsp;&nbsp;&nbsp;//Your form elements here<br />
-				print formClose();<br /><br />
+			<p class="code">
+				print char("#", 10); <br /><br />
+				
+				//Prints:  ##########						
+			</p>
+		
+		<p class="sub-title">div()</p>
 
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: div(string $ID, string $type = "id", string $style = NULL, string $content = NULL) <br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;div&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				print div("foo", "id"); <br />
+					//You HTML code here
+				print div(FALSE); <br /><br />
+				
 				//Prints: <br />
-				&lt;form id="foo" action="bar.php" method="post" class="Forms" enctype="multipart/form-data"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&lt;fieldset&gt; <br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Form&lt;/legend&gt; <br /><br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Your form elements here<br /><br />
-				&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt; <br />
-				&lt;/form&gt;
+				//Note: If you set the $ID parameter as TRUE, a div tag is opened, but not closed <br />
+				&lt;div id="foo"&gt; <br />
+					//You HTML code here <br />
+				&lt;/div&gt; <br />
+				
+			</p>
+					
+		<p class="sub-title">docType()</p>
 
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: docType($type = "XHTML 1.0 Strict") <br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;!DOCTYPE&gt; declaration"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				print docType(); <br />
+				//Prints: &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xHTML1/DTD/xHTML1-strict.dtd"&gt; <br /><br />
+				
+				
+				print docType("HTML 5"); <br />
+				//Prints: &lt;!DOCTYPE html&gt; <br /> <br />
+			</p>
+		
+		<p class="sub-title">getHTMLDecode()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: getHTMLDecode(string $HTML)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Converts all HTML entities to its respective characteres from a string"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$rawText = getHTMLDecode("I'll \"walk\" the &lt;b&gt;dog&lt;/b&gt; now"); <br /><br />
+				
+				print $rawText;<br />
+				//Prints: I'll &amp;quot;walk&amp;quot; the &amp;lt;b&gt;dog&amp;lt;/b&amp;gt; now
+				
 			</p>					
+		
+		<p class="sub-title">h1()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: h1(string $text)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;h1&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				print h1("My Header Text");<br />
+				//Prints: &lt;h1&gt; My Header Text &lt;/h1&gt;
+			</p>
+		
+		<p class="sub-title">h2()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: h1(string $text)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;h2&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				print h2("Foo");<br />
+				//Prints: &lt;h2&gt; My Header Text &lt;/h2&gt;
+			</p>
+		
+		<p class="sub-title">h3()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: h1(string $text)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;h3&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				print h3("Bar");<br />
+				//Prints: &lt;h3&gt; My Header Text &lt;/h3&gt;
+			</p>
+		
+		<p class="sub-title">img()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: img(string $src, string $alt = NULL, string $class = "no-border", array $attributes = NULL)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;img /&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$src = "http://www.example.com/foo.jpg";<br />
+				$alt = "Lorem Ipsum";<br /><br />
 					
+				print img($src, $alt, "no-border", NULL);<br /> <br />
+				
+				//Prints: &lt;img src="http://www.example.com/foo.jpg" alt="Lorem Ipsum" class="no-border" /&gt;
+			</p>
+		
+		<p class="sub-title">head()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: head(bool $open = TRUE)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;head&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">	
+				print head(TRUE); <br />
+					print "Foo"; <br />
+				print head(FALSE); <br /><br />
+				
+				//Prints: <br />
+				&lt;head&gt; Foo &lt;/head&gt;
+			</p>
+		
+		<p class="sub-title">HTML()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: HTML(bool $open = TRUE)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;HTML&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">	
+				print HTML(TRUE); <br />
+					//Your HTML code here <br />
+				print head(FALSE); <br /><br />
+				
+				//Prints: <br />
+				&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="'._webLang.'" xml:lang="'._webLang.'"&gt;<br />
+				//Your HTML code here <br />
+				&lt;/html&gt;
+			</p>
+		
+		
+		<p class="sub-title">p()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: p(string $text, string $class = "left")<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;p&gt; tag and its class attribute"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$text = "Foo"; <br />
+				print p($text); <br />
+					
+				//Prints: <br />
+				&lt;p class="left"&gt; <br />
+				&nbsp;&nbsp;&nbsp;Foo <br />
+				&lt;/p&gt;
+			</p>
+		
+		<p class="sub-title">small()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: small(string $text)<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;small&gt; tag"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$text = "Foo"; <br />
+				print small($text); <br />
+					
+				//Prints: <br />
+				&lt;small class="left"&gt; <br />
+				&nbsp;&nbsp;&nbsp;Foo <br />
+				&lt;/small&gt;
+			</p>
+		
+		
+		<p class="sub-title">span()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: span(string $text, string $class = "left")<br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;span&gt; tag and its class attribute"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$text = "Foo"; <br />
+				print span($text); <br />
+					
+				//Prints: <br />
+				&lt;span class="left"&gt; <br />
+				&nbsp;&nbsp;&nbsp;Foo <br />
+				&lt;/span&gt;
+			</p>
+		
+		<p class="sub-title">openUl()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: openUl(string $ID = NULL, string $class = NULL) <br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;span&gt; tag and its class attribute"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$ID    = "foo"; <br />
+				$class = "bar"; <br />
+				print openUl($ID, $class); <br /><br />
+					
+				//Prints: <br />
+				&lt;ul id="foo" class="bar"&gt; <br />
+			
+			</p>
+		
+		<p class="sub-title">openUl()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: openUl(string $ID = NULL, string $class = NULL) <br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets an &lt;span&gt; tag and its class attribute"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">
+				$ID    = "foo"; <br />
+				$class = "bar"; <br />
+				print openUl($ID, $class); <br /><br />
+					
+				//Prints: <br />
+				&lt;ul id="foo" class="bar"&gt; <br />
+			
+			</p>
 	</article>		
