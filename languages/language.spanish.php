@@ -298,14 +298,16 @@ function translation($text) {
 		return "Configura una etiqueta &lt;small&gt;";	
 	} elseif($text === "Sets an &lt;span&gt; tag and its class attribute") {
 		return "Configura una etiqueta &lt;span&gt; y su atributo class";	
-	} elseif($text === "") {
-		return "";	
-	} elseif($text === "") {
-		return "";	
-	} elseif($text === "") {
-		return "";	
-	} elseif($text === "") {
-		return "";	
+	} elseif($text === "Sets a &lt;li&gt; tag item") {
+		return "Configura una etiqueta &lt;li&gt;";	
+	} elseif($text === "You can include a unidimensional array into the -list- parameter, and load item, without their attributes") {
+		return "Puede incluir un arreglo simple como parámetro y cargar uno o múltiples ítems";	
+	} elseif($text === "In the other hand, you can set multiple items, and their attributes") {
+		return "Por otra parte, puede incluir múltiples elementos y sus atributos";	
+	} elseif($text === "Sets a &lt;/li&gt; closing tag item") {
+		return "Configura una etiqueta &lt;/li&gt; de cierre";	
+	} elseif($text === "Sets a &lt;ul&gt; block tag and its &lt;li&gt; tag items") {
+		return "Configura una bloque &lt;ul&gt; y sus elementos &lt;li&gt;";	
 	}
 	
 	
