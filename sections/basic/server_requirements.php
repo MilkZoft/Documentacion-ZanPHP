@@ -8,7 +8,7 @@
 
 <div id="Ubication">
 	<a href="../index.php?lang=<?php print $lang; ?>" title="<?php print __("Home"); ?>"><?php print __("Home"); ?></a> &raquo;
-	<?php print __("Welcome"); ?>
+	<?php print __("Server Requirements"); ?>
 </div>
 
 <div class="Clear"></div>

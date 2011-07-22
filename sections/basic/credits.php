@@ -8,7 +8,7 @@
 
 <div id="Ubication">
 	<a href="../index.php?lang=<?php print $lang; ?>" title="<?php print __("Home"); ?>"><?php print __("Home"); ?></a> &raquo;
-	<?php print __("Welcome"); ?>
+	<?php print __("Credits"); ?>
 </div>
 
 <div class="Clear"></div>
@@ -34,7 +34,7 @@
         	<?php print __("The MilkZoft's development team are:"); ?>
         </p>
         
-        <div style="width: 800px;">
+        <div>
         	<p class="sub-title">Carlos Santana Rold&aacute;n - CEO</p>
             
             <div style="float: left; width: 300px;">
@@ -50,7 +50,7 @@
         
         <div class="clear"></div>
         
-        <div style="width: 800px;">
+        <div>
         	<p class="sub-title">Carlos Hugo Gonz&aacute;lez Castell - Senior Developer</p>
             
             <div style="float: left; width: 300px;">
@@ -66,7 +66,7 @@
        
         <div class="clear"></div>
         
-        <div style="width: 800px;">
+        <div>
         	<p class="sub-title">H&eacute;ctor Cer&oacute;n Figueroa - Trainee</p>
             
             <div style="float: left; width: 300px;">
@@ -82,7 +82,7 @@
         
         <div class="clear"></div>
         
-        <div style="width: 800px;">
+        <div>
         	<p class="sub-title">Eduardo Figarola Mota - Trainee</p>
             
             <div style="float: left; width: 300px;">

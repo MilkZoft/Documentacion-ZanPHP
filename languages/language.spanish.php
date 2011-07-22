@@ -2,6 +2,13 @@
 function translation($text) {	
 	//Tabla de contenidos
 	switch($text) {
+		//Credits
+		case "Credits": return "Créditos"; break;
+		case 'ZanPHP was developed by <a href="http://www.twitter.com/CZantany" target="_blank" title="@CZantany">Carlos Santana</a> (CEO of <a href="http://www.milkzoft.com" target="_blank">MilkZoft</a>). ZanPHP was developed in 2009, but was until July 2011 that took the decision to release as free software.': return 'ZanPHP fue desarrollado por <a href="http://www.twitter.com/CZantany" target="_blank" title="@CZantany">Carlos Santana</a> (CEO de <a href="http://www.milkzoft.com" target="_blank">MilkZoft</a>). ZanPHP fue desarrollado en 2009, pero hasta Julio de 2011 se tomo la decisión de liberarlo como software libre.'; break;
+		case "Currently developing ZanPHP is maintained by the development team and contributors of MilkZoft community.": return "Actualmente el desarrollo de ZanPHP es mantenido por el equipo de desarrollo de MilkZoft y por los colaboradores de la comunidad."; break;
+		case "Is achieved by implementing best practices to develop applications faster and with higher quality.": return "Se implementaron las mejores practicas para desarrollar aplicaciones de manera más rápida y con mayor calidad."; break;
+		case "The MilkZoft's development team are:": return "El equipo de desarrollo que conforma a MilkZoft, es el siguiente:"; break;
+		
 		//Bienvenida
 		case "Welcome to ZanPHP": return "Bienvenido a ZanPHP"; break;
 		case "ZanPHP is an agile Web application development framework written in PHP5 that uses different design patterns and best practices to create applications more quickly with good quality code":
