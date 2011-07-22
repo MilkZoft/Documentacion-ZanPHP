@@ -153,21 +153,9 @@
 			</p>
 		
 			<p class="text">
-				<?php print __(""); ?>.
+				<?php print __("Encodes records if -encoding- flag is set as TRUE"); ?>.
 			</p>	
 		
-		<p class="sub-title">logs()</p>
-
-			<p class="parameters">
-				<?php print __("Parameters"); ?>: logs(bool $logs = FALSE) <br />
-				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
-			</p>
-		
-			<p class="text">
-				<?php print __(""); ?>. <?php print __("Example"); ?>:
-			</p>
-			
-	
 		<p class="sub-title">table()</p>
 
 			<p class="parameters">

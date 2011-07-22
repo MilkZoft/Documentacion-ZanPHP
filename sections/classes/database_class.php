@@ -113,7 +113,7 @@
 			</p>
 		
 			<p class="text">
-				<?php print __("Constructor"); ?>.
+				<?php print __("Constructor"); ?>. <?php print __("Loads the main config file, and performs the database connection"); ?>.
 			</p>	
 
 		<p class="sub-title">connect()</p>

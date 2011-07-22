@@ -327,6 +327,7 @@ function translation($text) {
 		case "Contains the SQL query": return "Contiene la consulta SQL"; break;	
 		case "Contains the database's connection": return "Contiene la conexión a la base de datos"; break;	
 		case "Contains the database's driver object": return "Contiene el objeto del manejador de base de datos"; break;	
+		case "Loads the main config file, and performs the database connection": return "Carga el archivo de configuración principal y realiza la conexión a la base de datos"; break;
 		case "Establishes Database Connection": return "Establece la conexión a la base de datos"; break;	
 		case "Performs a custom SQL query": return "Realiza una consulta SQL personalizada"; break;	
 		case "Performs a SQL INSERT": return "Realiza una inserción SQL"; break;	
@@ -351,6 +352,7 @@ function translation($text) {
 		case "Contains the query string": return "Contiene la cadena de consulta"; break;	
 		case "Contains the name of the table": return "Contiene el nombre de la tabla"; break;	
 		case "Contains the fields of the table": return "Contiene los campos de la tabla"; break;	
+		case "Encodes records if -encoding- flag is set as TRUE": return "Codifica registros si el estatus de la bandera -encoding- es TRUE"; break;
 		case "Contains the values of the query": return "Contiene los valores de la consulta"; break;	
 		case "Constructor (loads a Database class object)": return "Constructor (Carga un objeto tipo Database)"; break;	
 		case "Contains the row content in fetch mode": return "Contiene el contenido del registro devuelto por fetch()"; break;		
