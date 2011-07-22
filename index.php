@@ -1,6 +1,6 @@
 <?php
 define("_domain", FALSE);
-define("_modRewrite", FALSE);
+define("_modRewrite", TRUE);
 
 	include "helpers/helper.router.php";
 	
@@ -12,11 +12,11 @@ define("_modRewrite", FALSE);
 		$image    = "tablacontent_es.png";
 		
 		if(count($route) > 2 and isset($route[1])) {
-			$URL  	= "index.php/es";
-			$URLang = "index.php/en/" . $route[1] . "/". $route[2];			
+			$URL  	= "es";
+			$URLang = "en/" . $route[1] . "/". $route[2];			
 		} else {
-			$URL	= "index.php/es";
-			$URLang = "index.php/en";	
+			$URL	= "es";
+			$URLang = "en";	
 		}
 	} else {
 		define("_language", "English");
@@ -24,17 +24,17 @@ define("_modRewrite", FALSE);
 		$image    = "tablacontent.png";
 		
 		if(count($route) > 2 and isset($route[1])) {
-			$URL	= "index.php/en";
-			$URLang = "index.php/es/" . $route[1] . "/". $route[2];	
+			$URL	= "en";
+			$URLang = "es/" . $route[1] . "/". $route[2];	
 		} else {
-			$URL	= "index.php/en";
-			$URLang = "index.php/es";	
+			$URL	= "en";
+			$URLang = "es";	
 		}
 	}
 		
 	define("_access", TRUE);
 	define("_zanphp", "ZanPHP v.1.0");
-	define("_base", "http://localhost/documentacion/");
+	define("_base", "http://www.zanphp.com/documentation/");
 	
 	include "helpers/helper.i18n.php";
 	$URL	= _base . $URL;

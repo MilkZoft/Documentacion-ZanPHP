@@ -38,7 +38,7 @@
         	<p class="sub-title">Carlos Santana Rold&aacute;n - CEO</p>
             
             <div style="float: left; width: 300px;">
-                <img src="../../../images/carlos.jpg" alt="Carlos Santana" class="shadow" />
+                <img src="../../images/carlos.jpg" alt="Carlos Santana" class="shadow" />
             </div>
             
             <div style="float: left; width: 400px; margin-left: 20px;">
@@ -54,7 +54,7 @@
         	<p class="sub-title">Carlos Hugo Gonz&aacute;lez Castell - Senior Developer</p>
             
             <div style="float: left; width: 300px;">
-                <img src="../../../images/hugo.png" alt="Carlos Hugo Gonz&aacute;lez Castell - Senior Developer" class="shadow" />
+                <img src="../../images/hugo.png" alt="Carlos Hugo Gonz&aacute;lez Castell - Senior Developer" class="shadow" />
             </div>
             
             <div style="float: left; width: 400px; margin-left: 20px;">
@@ -70,7 +70,7 @@
         	<p class="sub-title">H&eacute;ctor Cer&oacute;n Figueroa - Trainee</p>
             
             <div style="float: left; width: 300px;">
-                <img src="../../../images/hector.jpg" alt="H&eacute;ctor Cer&oacute;n Figueroa - Trainee" class="shadow" />
+                <img src="../../images/hector.jpg" alt="H&eacute;ctor Cer&oacute;n Figueroa - Trainee" class="shadow" />
             </div>
             
             <div style="float: left; width: 400px; margin-left: 20px;">
@@ -86,7 +86,7 @@
         	<p class="sub-title">Eduardo Figarola Mota - Trainee</p>
             
             <div style="float: left; width: 300px;">
-                <img src="../../../images/lalo.jpg" alt="Eduardo Figarola Mota - Trainee" class="shadow" />
+                <img src="../../images/lalo.jpg" alt="Eduardo Figarola Mota - Trainee" class="shadow" />
             </div>
             
             <div style="float: left; width: 400px; margin-left: 20px;">
