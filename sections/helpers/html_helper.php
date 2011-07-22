@@ -412,21 +412,121 @@
 		<p class="sub-title">li()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: openUl(string $ID = NULL, string $class = NULL) <br />
+				<?php print __("Parameters"); ?>: li(string $list) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
 			<p class="text">
-				<?php print __("Sets an &lt;span&gt; tag and its class attribute"); ?>. <?php print __("Example"); ?>:
+				<?php print __("Sets a &lt;li&gt; tag item"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="code">
-				$ID    = "foo"; <br />
-				$class = "bar"; <br />
-				print openUl($ID, $class); <br /><br />
-					
-				//Prints: <br />
-				&lt;ul id="foo" class="bar"&gt; <br />
+			<p class="text">
+				<?php print __("You can include a unidimensional array into the -list- parameter, and load item, without their attributes"); ?>. <?php print __("Example"); ?>:
+			</p>
 			
+			<p class="code">
+				$list[0]  = "foo"; <br />
+				$list[1]  = "bar"; <br />
+				$list[2]  = "baz"; <br /><br />
+				
+				print openUl(); <br />
+				&nbsp;&nbsp;&nbsp;print li($list); <br />
+				print closeUl(); <br /><br />
+				
+				//Prints: <br />
+				
+				&lt;ul&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt; foo &lt;/li&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt; bar &lt;/li&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt; baz &lt;/li&gt; <br />
+				&lt;/ul&gt; <br />
+			</p>
+			
+			<p class="text">
+				<?php print __("In the other hand, you can set multiple items, and their attributes"); ?>. <?php print __("Example"); ?>:
+			</p>
+			
+			<p class="code">				
+				$list[0]["item"]  = "foo"; <br />
+				$list[0]["class"] = "lorem"; <br /><br />
+				
+				$list[1]["item"]  = "bar"; <br />
+				$list[1]["class"] = "ipsum"; <br /><br />
+				
+				print openUl(); <br />
+				&nbsp;&nbsp;&nbsp;print li($list); <br />
+				print closeUl(); <br /><br />
+				
+				//Prints: <br />
+				
+				&lt;ul&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li class="lorem"&gt; foo &lt;/li&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li class="ipsum"&gt; bar &lt;/li&gt; <br />
+				&lt;/ul&gt; <br />
+			</p>
+		
+		<p class="sub-title">closeUl()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: None. <br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;/li&gt; closing tag item"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="code">			
+				$list[0]  = "foo"; <br />
+				$list[1]  = "bar"; <br />
+				$list[2]  = "baz"; <br /><br />
+				
+				print openUl(); <br />
+				&nbsp;&nbsp;&nbsp;print li($list); <br />
+				print closeUl(); <br /><br />
+				
+				//Prints: <br />
+				
+				&lt;ul&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt; foo &lt;/li&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt; bar &lt;/li&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt; baz &lt;/li&gt; <br />
+				&lt;/ul&gt; <br />
+			
+			</p>
+		
+		<p class="sub-title">ul()</p>
+
+			<p class="parameters">
+				<?php print __("Parameters"); ?>: ul(string $list, string $ID = NULL, string $class = NULL) <br />
+				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
+			</p>
+			
+			<p class="text">
+				<?php print __("Sets a &lt;ul&gt; block tag and its &lt;li&gt; tag items"); ?>. <?php print __("Example"); ?>:
+			</p>	
+			
+			<p class="text">
+				<?php print __("You can include a unidimensional array into the -list- parameter, and load item, without their attributes"); ?>. <?php print __("Example"); ?>:
+			</p>
+			
+			<p class="code">
+				
+				$list[0]["item"]  = "foo"; <br />
+				$list[0]["class"]  = "bar"; <br /><br />
+				
+				$list[1]["item"]  = "baz"; <br />
+				$list[1]["class"]  = "ban"; <br /><br />
+
+				$class = "lorem";<br />
+				$id    = "ipsum";<br /><br />
+				
+				print ul($list, $ID, $class); <br /><br />
+				
+				//Prints:<br />
+				&lt;ul&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li class="bar"&gt; foo &lt;/li&gt; <br />
+				&nbsp;&nbsp;&nbsp;&lt;li class="ban"&gt; baz &lt;/li&gt; <br />
+				&lt;/ul&gt; <br />
 			</p>
 	</article>		

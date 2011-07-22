@@ -9,6 +9,16 @@ a {
 	text-decoration: none;
 }
 
+.shadow {
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;	
+}
+
+.clear {
+	clear: both;	
+}
+
 a:hover {
 	color: #333;
 }
