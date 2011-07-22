@@ -19,7 +19,7 @@
 		</p>
 			
 		<p class="text">
-			<?php print __("Thanks to the design patterns implemented by ZanPHP, you can use more than one driver database on the websites, this means that we can work on a website under MySQL, MSSQL Server and PostgreSQL."); ?>
+			<?php print __("Thanks to the design patterns implemented by ZanPHP, you can use more than one driver database on the websites, this means that we can work on a website under MySQL, MSSQL Server and PostgreSQL"); ?>.
 		</p>
         
         <p class="text">

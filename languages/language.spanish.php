@@ -75,14 +75,30 @@ function translation($text) {
 		case "<strong>_domain:</strong> serves to specify the domain that our site will have.": return "<strong>_domain:</strong> nos sirve para especificar el dominio que nuestro sitio tendrá."; break;
 		case "<strong>_modRewrite:</strong> toggles the stylization of URLs (TRUE or FALSE).": return "<strong>_modRewrite:</strong> activa o desactiva la estilización de URLs (TRUE o FALSE)."; break;
 		case "<strong>_webURL:</strong> URL allows you to configure the general site will useful to load images, scripts, etc.": return "<strong>_webURL:</strong> nos permite configurar la URL general que tendrá el sitio, útil para cargar imagenes, scripts, etc."; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
+		
+		//Databases
+		case "Databases": return "Bases de datos"; break;
+		case "Thanks to the design patterns implemented by ZanPHP, you can use more than one driver database on the websites, this means that we can work on a website under MySQL, MSSQL Server and PostgreSQL": return "Gracias a los patrones de diseño que ZanPHP implementa, es posible utilizar más de un controlador de base de datos en nuestros sitios, esto quiere decir que podemos trabajar en un sitio bajo MySQL, MSSQLServer y Postgre SQL"; break;
+		case "For this, it is only necessary, modify the constant _dbController located in the file": return "Para esto, sólo es necesario, modificar la constante _dbController ubicada en el archivo"; break;
+		
+		//Applications
+		case "Create an application with ZanPHP is very easy, you just need to create a directory within /applications, the directory must take the application name in lowercase. Note that the directory name that is the same with which you will access the application from the website": return "Crear una aplicación en ZanPHP es muy fácil, solo es necesario crear un directorio dentro de /applications, el directorio deberá llevar el nombre de la aplicación en minúsculas. Cabe destacar que el nombre que tenga el directorio es el mismo con el cual se accederá a la aplicación desde el sitio web"; break;
+		case "Other aspects to consider, is that within the application directory 2 files should be mandatory, as well as a directory, which are: controller.application.php, model.application.php and /views": return "Otros de los aspectos a considerar, es que dentro del directorio de aplicación debe de existir 2 archivos obligatorio, así como un directorio, los cuales son los siguientes: controller.application.php, model.application.php y /views"; break;
+		case "The contents of these files and the directory will be explained in the subsequent topics": return "El contenido de estos archivos y directorio, será explicado en temas posteriores"; break;
+		
+		//Controllers
+		case "The controllers are very important in ZanPHP they are indispensable for the use of MVC. It is important that each application must have a controller, a model and the views can vary": return "Los controladores en ZanPHP son muy importantes pues son indispensables para la utilización del MVC. Es muy importante que cada aplicación debe de tener un controlador, un modelo y las vistas pueden variar"; break;
+		case "However, this section will analyze the structure that a controller must have for proper operation": return "Ahora bien, en esta sección se analizará la estructura que un controlador debe de tener para su correcto funcionamiento"; break;
+		case "This is the basic structure that any controller should have and fulfill for the proper functioning of the framework": return "Esta es la estructura básica que cualquier controlador debera tener y cumplir para el correcto funcionamiento del framework"; break;
+		
+		//Models
+		case "Models are a fundamental part of an application, since they are in charge of interacting with the database, model, classify and to organize data": return "Los modelos son pieza fundamental de una aplicación, pues son los que se encargan de interactuar con la base de datos, modelar, clasificar y hasta organizar los datos"; break;
+		case "Like the controllers, models have a basic structure that must be met to work correctly with ZanPHP": return "Al igual que los controladores poseen una estructura básica que debe de ser cumplida para trabajar correctamente con ZanPHP"; break;
+		
+		//Views
+		case "The views are responsible for showing or request data to the user. The controller is responsible for loading the view with data obtained by the models. That's how the MVC design pattern works": return "Las vistas son las encargadas de mostrar o solicitar datos al usuario. El controlador es el encargado de cargar las vistas con los datos obtenidos mediante los modelos. Así es como funciona el patrón de diseño MVC"; break;
+		case "Views should be named as follows: view.myview.php and must be located in the /views of each application" : return "Las vistas deben de ser nombradas de la siguiente forma: view.myview.php y deben estar ubicadas en el directorio /views de cada aplicación"; break;
+		case "Another important aspect to mention about the directory /views, is that this can be created within the /css, /js or /images, where can be placed style sheets, scripts and images that will be used only by the application": return "Otro aspecto importante para mencionar acerca del directorio /views, es que dentro de este pueden crearse los directorios /css, /js o /images; donde deberán de ser colocados las hojas de estilos, scripts e imagenes que serán utilizadas unicamente por la aplicación"; break;
 		
 		case "Basic Info": return "Información Básica"; break;
 		case "Server Requirements": return "Requerimientos del Servidor"; break;
