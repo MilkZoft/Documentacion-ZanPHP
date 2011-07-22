@@ -52,7 +52,7 @@
 				<?php print __("Parameters"); ?>: cleanHTML(string $HTML) <br />
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
-		
+	
 			<p class="text"> 
 				<?php print __("This function cleans HTML from a String"); ?>. <?php print __("Example"); ?>:
 			</p>	
@@ -258,12 +258,12 @@
 		<p class="sub-title">decode()</p> <!--Not yet-->
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: encode(string $text, bool $URL = FALSE) <br />
+				<?php print __("Parameters"); ?>: decode(string $text, bool $URL = FALSE) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
 			<p class="text"> 
-				<?php print __("This function encodes a URL and/or a String"); ?>. <?php print __("Example"); ?>:
+				<?php print __("This function decodes a URL and/or a String"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
 			<p class="code">

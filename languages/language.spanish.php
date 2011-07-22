@@ -308,10 +308,30 @@ function translation($text) {
 		case "This function sets a session variable": return "Esta función crea una variable de sesión"; break;	
 		case 'This Function returns a $_SESSION index variable value': return "Esta función devuelve el valor de una variable de sesión"; break;
 		
+		//String Helper
+		case "This function cleans HTML from a String": return "Esta función limpia el HTML contenido en una cadena"; break;
+		case "This function removes blank spaces from a string": return "Esta función elimina espacios en blanco en una cadena"; break;
+		case "This function compress a string": return "Esta función comprime una cadena"; break;
+		case 'This function gets data from $_POST or $_GET': return 'Esta función obtiene datos de $_POST o $_GET'; break;
+		case 'This function returns a specific position value from $_FILES': return 'Esta función retorna una posición específica de la Súper Global $_FILES'; break;
+		case 'This function recovers data from $_POST': return 'Esta función recobra datos de $_POST'; break;
+		case "This function help you work with numeric data": return "Esta función facilita el trabajo con datos numéricos"; break;
+		case "This function cleans a string": return "Esta función limpia por completo una cadena"; break;
+		case "This function encodes a URL and/or a String": return "Esta función codifica una URL y/o una cadena"; break;
+		case "This function decodes a URL and/or a String": return "Esta función decodifica una URL y/o una cadena"; break;
+		case "This function returns the nice form of a String": return "Esta función retorna la forma -nice- (agradable) de una cadena"; break;
+		
+		//Validations Helper
+		case "Validates if a strings as an email": return "Valida si una cadena es un email"; break;
+		case "Validates if a strings as a HTML injection": return "Valida si una cadena es una inyección HTML"; break;
+		case "Validates if a strings contents SPAM": return "Valida si una cadena contiene SPAM"; break;
+		case "Validates if a strings contents vulgar expressions": return "Valida si una cadena contiene expresiones vulgares"; break;
+		
 		//Web Helper
 		case "The Helper Web contains Web functions related": return "El Ayudante Web contiene funciones relacionadas con la Web";
 		case "Gets and prints default meta tags": return "Obtiene e imprime las etiquetas &lt;meta&gt; por defecto"; break;
-		
+		case "Compresses a Script file": return "Comprime cualquier tipo de archivo de texto (script)"; break;
+
 		#Classes
 		case "Loading this Class": return "Cargando esta clase"; break;	
 		case "This Class is loaded using the following code": return "Esta clase es cargada usando el siguiente código"; break;
