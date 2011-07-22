@@ -25,7 +25,7 @@
 		</p>
 		
 			<p class="small">
-				core/classes/class.database.php
+				core/classes/class.db.php
 			</p>
 			
 			<p class="text">
@@ -39,7 +39,7 @@
 			</p>
 			
 			<p class="code">
-				$this->core("database");
+				$this->core("Db");
 			</p>
 			
 			<p class="text">
