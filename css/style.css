@@ -131,7 +131,7 @@ footer {
 
 #Sidebar {
 	float:left;
-	width:240px;	
+	width:260px;	
 	background-color:black;
 	font-size: 0.8em;
 	color: #CCC;
@@ -139,7 +139,7 @@ footer {
 
 #Content {
 	float:right;
-	width:77%;
+	width:75%;
 }
 
 #Menu {
