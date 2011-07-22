@@ -16,7 +16,7 @@
 	include "search.php";
 ?>
 
-<div class="Clear"></div>
+<div class="clear"></div>
 
 
 	<article>

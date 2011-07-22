@@ -38,7 +38,7 @@
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("string");
 			</p>
 			
@@ -57,7 +57,7 @@
 				<?php print __("This function cleans HTML from a String"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$text = "&lt;p&gt;&lt;strong&gt;Lorem&lt;/strong&gt; ipsum&lt;/p&gt;"; <br />
 				print cleanHTML($text); <br /> <br />
 				//Prints: Lorem ipsum
@@ -74,7 +74,7 @@
 				<?php print __("This function removes blank spaces from a string"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$text = "Lorem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ipsum";<br />
 				//Gets: "Lorem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ipsum";<br /><br />
 				removeSpaces($text, FALSE);<br />
@@ -92,7 +92,7 @@
 				<?php print __("This function compress a string"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 			
 				$HTML = " <br />
 						&lt;html&gt;<br />
@@ -137,7 +137,7 @@
 				<?php print __("This function gets data from \$_POST or \$_GET"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				if(POST("foo") !== FALSE) print POST("foo", "encode"); <br />
 				
@@ -163,7 +163,7 @@
 				<?php print __('This function returns a specific position value from $_FILES'); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				FILES("download", "name"); <br />
 				//Assuming "image" is set and it is a file.<br />
 				Array { <br />
@@ -184,7 +184,7 @@
 				<?php print __("This function recovers data from \$_POST"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				recoverPOST("foo");<br /><br />
 				
@@ -209,7 +209,7 @@
 				<?php print __("This function help you work with numeric data"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				print getFileSize(1000000);<br />
 				//Prints: 976.56 Kb <br /><br />
@@ -229,7 +229,7 @@
 				<?php print __("This function cleans a string"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				$text = "&lt;scrip&gt; alert('Message'); &lt;/scrip&gt;"; <br />
 				print filter($text, TRUE);<br /><br />
@@ -249,7 +249,7 @@
 				<?php print __("This function encodes a URL and/or a String"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$text = decode("áéíóú"); <br />
 				print encode($text, FALSE);<br />
 				//Prints: áéíóú			
@@ -266,7 +266,7 @@
 				<?php print __("This function encodes a URL and/or a String"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$text = decode("áéíóú"); <br />
 				print encode($text, FALSE);<br />
 				//Prints: áéíóú			
@@ -283,7 +283,7 @@
 				<?php print __("This function returns the nice form of a String"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				$text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"; <br />
 				print nice($text);<br /> <br />
 				//Prints: "lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit"

@@ -8,13 +8,13 @@
 
 <div id="Ubication">
 	<a href="../index.php?lang=<?php print $lang; ?>" title="<?php print __("Home"); ?>"><?php print __("Home"); ?></a> &raquo;
-	<?php print __("Welcome"); ?>
+	<?php print __("License Agreement"); ?>
 </div>
 
 <div class="Clear"></div>
 
 	<article>
-		<p class="title"><?php print __("ZanPHP License Agreement"); ?><br /></p>
+		<p class="title"><?php print __("License Agreement"); ?><br /></p>
         
 		<p class="text">
 			<?php print __("Copyright (c) 2011, MilkZoft, Inc."); ?><br />

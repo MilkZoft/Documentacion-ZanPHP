@@ -16,59 +16,59 @@
 	include "search.php";
 ?>
 
-<div class="Clear"></div>
+<div class="clear"></div>
 
 
 	<article>
-		<p class="Title">
+		<p class="title"">
 			<?php print __("Router Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/router.forms.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper Router contains functions to manipulate URLs"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("router");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">execute()</p>
+		<p class="sub-title">execute()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("Executes the run() method which is inside all application controllers"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
 			
-		<p class="SubTitle">segment()</p>
+		<p class="sub-title">segment()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: __(int $segment); <br />
 				<?php print __("Return"); ?>:  <?php print __("@mixed"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns a string containing a specific URL segment from route()"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				print segment(0); <br /><br />
 				
@@ -76,17 +76,17 @@
 				//In this case the default value for segment(0) is a XML Language Abbreviation.
 			</p>
 	
-		<p class="SubTitle">route()</p>
+		<p class="sub-title">route()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@mixed"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns an Array from \$_SERVER[\"REQUEST_URI\"] exploding each position with slashes"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				var_dump(route()); <br /><br />
 				
@@ -102,17 +102,17 @@
 				//The actual given URL: http://localhost/zanphp/index.php/en/myapp
 			</p>
 		
-		<p class="SubTitle">getURL()</p>
+		<p class="sub-title">getURL()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns a URL"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				print getURL(); <br /><br />
 				

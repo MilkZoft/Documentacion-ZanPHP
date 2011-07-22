@@ -16,48 +16,48 @@
 	include "search.php";
 ?>
 
-<div class="Clear"></div>
+<div class="clear"></div>
 
 
 	<article>
-		<p class="Title">
+		<p class="title"">
 			<?php print __("Security Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/helper.security.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper Security contains security related functions"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("security");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">code()</p>
+		<p class="sub-title">code()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: __(int $max, boolen $uppercase = TRUE); <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("Generates and returns a unique code based on a timestamp"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				
 				print code() . "&lt;br /&gt;"; <br />
@@ -65,11 +65,11 @@
 					
 			</p>
 			
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("You can define the large of the returned string -no longer than a md5 hash- and if it is uppercased"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				
 				print code(12,FALSE) . "&lt;br /&gt;"; <br />
@@ -78,18 +78,18 @@
 			</p>
 			
 			
-		<p class="SubTitle">escape()</p>
+		<p class="sub-title">escape()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: __(int $segment); <br />
 				<?php print __("Return"); ?>:  <?php print __("@mixed"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function escapes potentially harmful string fragments in a string to avoid SQL Injections"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				$string = "'OR'1'='1"; <br />
 				print escape($string); <br />
@@ -98,18 +98,18 @@
 				//This is a common SQL Injection.
 			</p>
 		
-		<p class="SubTitle">encripting()</p>
+		<p class="sub-title">encripting()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: encripting(string $password = NULL, int $strong = 3, bool $key = TRUE, bool $uppercase = FALSE) <br />
 				<?php print __("Return"); ?>:  <?php print __("@mixed"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns an encripted string"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 			
 				$pass = "my_pass"; <br />
 				print encripting($pass, 1, TRUE, TRUE); <br /><br />
@@ -120,11 +120,11 @@
 				   			
 			</p>
 			
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("You can define the encripting strong"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 			
 				$pass = "my_pass"; <br />
 				print encripting($pass, 3, TRUE, TRUE); <br /><br />
@@ -133,34 +133,34 @@
 				//There is three encripting levels.<br />   			
 			</p>
 			
-		<p class="SubTitle">getIP()</p>
+		<p class="sub-title">getIP()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@mixed"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns the User's IP"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				print getIP(); <br /><br />
 				
 				//Prints: 127.0.0.1
 			</p>
 		
-		<p class="SubTitle">ping()</p>
+		<p class="sub-title">ping()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function pings a URL"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				if(ping("www.mydomain.com") === TRUE){ <br />
 				&nbsp;&nbsp;&nbsp;print "Success"; <br />
@@ -170,18 +170,18 @@
 			
 			</p>
 		
-		<p class="SubTitle">redirect()</p>
+		<p class="sub-title">redirect()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: redirect(string $URL, mixed $time = FALSE) <br />
 				<?php print __("Return"); ?>:  <?php print __("@void"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function redirect to a URL"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				redirect("www.mydomain.com", 1);
 				

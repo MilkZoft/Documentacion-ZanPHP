@@ -16,11 +16,11 @@
 	include "search.php";
 ?>
 
-<div class="Clear"></div>
+<div class="clear"></div>
 
 
 	<article>
-		<p class="title">
+		<p class="title"">
 			<?php print __("BenchMark Helper"); ?><br />
 		</p>
 		
