@@ -153,7 +153,7 @@
 			</p>
 		
 			<p class="text">
-				<?php print __("Encodes records if -encoding- flag is set as TRUE"); ?>.
+				<?php print __("Sets -encode- flag attribute as TRUE or FALSE"); ?>.
 			</p>	
 		
 		<p class="sub-title">table()</p>
@@ -283,7 +283,15 @@
 			</p>
 			
 			<p class="code">
-				
+				//Instances the Database Class
+				$this->Db = $this->core("Db");
+
+				$table = "My_Table";
+				$values = "My_Table.Field = 'Foo', My_Table.Field2 = 'Bar'";
+				$ID = 10;
+				$primaryKey = "My_Table.ID_Field";
+				$succesUpdate = $this->Db->update($table, $values, $ID, $primaryKey);
+				//$successUpdate will TRUE if the Record has been deleted successfully. 
 			</p>
 		
 		
@@ -617,7 +625,7 @@
 			</p>
 		
 			<p class="text">
-				<?php print __(""); ?>.
+				<?php print __("Begins a transaction. It works as a Interface of the begin() method from any Database Driver which supports Transactions"); ?>.
 			</p>
 		
 		
@@ -629,7 +637,7 @@
 			</p>
 		
 			<p class="text">
-				<?php print __(""); ?>.
+				<?php print __("Saves changes. It works as a Interface of the commit() method from any Database Driver which supports Transactions"); ?>.
 			</p>
 		
 		
@@ -641,7 +649,7 @@
 			</p>
 		
 			<p class="text">
-				<?php print __(""); ?>.
+				<?php print __("Ignore changes. It works as a Interface of the rollBack() method from any Database Driver which supports Transactions"); ?>.
 			</p>	
 		
 		
@@ -653,7 +661,7 @@
 			</p>
 		
 			<p class="text">
-				<?php print __(""); ?>.
+				<?php print __("Encodes records if -encode()- flag is set as TRUE"); ?>.
 			</p>
 			
 			<!-- End Public Methods -->

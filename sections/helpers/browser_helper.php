@@ -46,7 +46,7 @@
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="sub-title">getBrowser()</p>
+		<p class="sub-title">browser()</p>
 
 			<p class="parameters">
 				<?php print __("Return"); ?>:  <?php print __("String"); ?>;
@@ -58,7 +58,7 @@
 			
 			<p class="code">
 				
-				getBrowser(); <br /><br />
+				browser(); <br /><br />
 				//If the current User Agent is from a Chrome-based Browser.<br />
 				//Prints: "Chrome" .<br />
 										

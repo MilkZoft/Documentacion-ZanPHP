@@ -248,7 +248,7 @@ function translation($text) {
 		case "Sets an &lt;body&gt; opening/closing tag": return "Configura una etiqueta &lt;body&gt; de apertura o cierre "; break;	
 		case "Sets a &lt;span&gt; tag with the CSS Bold property": return "Configura una etiqueta &lt;span&gt; con la propiedad CSS Bold"; break;	
 		case "Sets a &lt;br&gt; tag": return "Configura una etiqueta &lt;br&gt;"; break;	
-		case "Sets an UTF-8 character": return "Configura un caracter UTF-8"; break;
+		case "Sets and prints an UTF-8 character one or more times": return "Configura e imprime un caracter UTF-8 una o más veces"; break;
 		case "Sets an &lt;div&gt; tag": return "Configura una etiqueta &lt;div&gt;";	
 		case "Sets a &lt;!DOCTYPE&gt; declaration": return "Configura una declaración &lt;!DOCTYPE&gt;"; break;	
 		case "Converts all HTML entities to its respective characteres from a string": return "Convierte todas las entidades HTML de una cadena a sus caracteres correspondientes"; break;	
@@ -307,7 +307,10 @@ function translation($text) {
 		case "This function sets a cookie": return "Esta función crea una Cookie"; break;	
 		case "This function sets a session variable": return "Esta función crea una variable de sesión"; break;	
 		case 'This Function returns a $_SESSION index variable value': return "Esta función devuelve el valor de una variable de sesión"; break;
-	
+		
+		//Web Helper
+		case "The Helper Web contains Web functions related": return "El Ayudante Web contiene funciones relacionadas con la Web";
+		
 		#Classes
 		case "Loading this Class": return "Cargando esta clase"; break;	
 		case "This Class is loaded using the following code": return "Esta clase es cargada usando el siguiente código"; break;
@@ -354,6 +357,8 @@ function translation($text) {
 		case "Contains the fields of the table": return "Contiene los campos de la tabla"; break;	
 		case "Encodes records if -encoding- flag is set as TRUE": return "Codifica registros si el estatus de la bandera -encoding- es TRUE"; break;
 		case "Contains the values of the query": return "Contiene los valores de la consulta"; break;	
+		case "Sets -encode- flag attribute as TRUE or FALSE": return "Configura la bandera -encode- como TRUE o FALSE"; break;
+		case "Encodes records if -encode()- flag is set as TRUE": return "Codifica registros si la bandera -encode()- es TRUE"; break;
 		case "Constructor (loads a Database class object)": return "Constructor (Carga un objeto tipo Database)"; break;	
 		case "Contains the row content in fetch mode": return "Contiene el contenido del registro devuelto por fetch()"; break;		
 		case "Sets the table and fields to perform a SQL query": return "Configura la tabla y los campos de una consulta SQL"; break;	

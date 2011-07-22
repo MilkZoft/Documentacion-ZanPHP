@@ -9,7 +9,7 @@
 <div id="Ubication">
 	<a href="index.php?lang=<?php print $lang; ?>" title="<?php print __("Home"); ?>"><?php print __("Home"); ?></a> &raquo; 
 	<a href="index.php?lang=<?php print $lang; ?>&section=helpers" title="<?php print __("Helpers"); ?>"><?php print __("Helpers"); ?></a> &raquo; 
-	<?php print __("String Helper"); ?>
+	<?php print __("Web Helper"); ?>
 </div>
 
 <?php
@@ -21,15 +21,15 @@
 
 	<article>
 		<p class="title">
-			<?php print __("String Helper"); ?><br />
+			<?php print __("Web Helper"); ?><br />
 		</p>
 		
 			<p class="small">
-				core/helpers/string.security.php
+				core/helpers/helper.web.php
 			</p>
 			
 			<p class="text">
-				<?php print __("The Helper String contains functions to deal with Text and Strings"); ?>.
+				<?php print __("The Helper Web contains Web functions related"); ?>.
 			</p>
 		
 		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
@@ -39,7 +39,7 @@
 			</p>
 			
 			<p class="code">
-				$this->helper("string");
+				$this->helper("web");
 			</p>
 			
 			<p class="text">

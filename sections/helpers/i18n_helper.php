@@ -25,7 +25,7 @@
 		</p>
 		
 			<p class="small">
-				core/helpers/i18n.forms.php
+				core/helpers/helper.i18n.php
 			</p>
 			
 			<p class="text">

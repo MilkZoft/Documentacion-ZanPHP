@@ -141,7 +141,7 @@
 			</p>
 			
 			<p class="text">
-				<?php print __("Sets an UTF-8 character"); ?>. <?php print __("Example"); ?>:
+				<?php print __("Sets and prints an UTF-8 character one or more times"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
 			<p class="code">
@@ -163,7 +163,7 @@
 			
 			<p class="code">
 				print div("foo", "id"); <br />
-					//You HTML code here
+					//You HTML code here <br />
 				print div(FALSE); <br /><br />
 				
 				//Prints: <br />

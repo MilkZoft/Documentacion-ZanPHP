@@ -127,7 +127,20 @@
 			</p>
 			
 			<p class="code">
-
+				$this->Files = $this->core("Files");<br /><br />
+				
+				$path = "path/to/";<br /><br />
+				
+				//Assuming $_FILES["file"] is set and its a .rar file <br />
+				$this->Files->filename  = FILES("file", "name");<br />
+				$this->Files->fileType  = FILES("file", "type");<br /> 
+				$this->Files->fileSize  = FILES("file", "size");<br />
+				$this->Files->fileError = FILES("file", "error");<br />
+				$this->Files->fileTmp   = FILES("file", "tmp_name");<br /><br />
+				
+				//Uploads the .rar document to /path/to/file.rar <br />
+				$thi->Files->upload($path, "document");
+				
 			</p>	
 
 		<p class="sub-title">updateImage()</p>
@@ -142,7 +155,17 @@
 			</p>	
 			
 			<p class="code">
-	
+				$this->Files = $this->core("Files");<br /><br />
+				
+				$path = "path/to/file";<br /><br />
+				
+				//Assuming $_FILES["file"] is set and its an image (jpg, gif, png, etc.) file <br /><br />
+				
+				$this->Files->uploadImage($path, "file", "resize", TRUE, TRUE, TRUE);<br />
+				//Uploads:<br />
+				// /path/to/small_file.jpg <br />
+				// /path/to/medium_file.jpg <br />
+				// /path/to/original_file.jpg <br />
 			</p>
 		
 		
@@ -158,7 +181,13 @@
 			</p>	
 			
 			<p class="code">
-		
+				$this->Files = $this->core("Files");<br /><br />
+							
+				//Assuming $_FILES["file"] is set and its a .rar file <br />
+				$this->Files->fileType  = FILES("file", "type");<br /><br />
+				
+				//Prints: "document" <br />
+				$this->Files->getType($this->Files->fileType);		
 			</p>
 				
 			

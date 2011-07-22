@@ -97,9 +97,9 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string(2) "en" <br />
 				&nbsp;&nbsp;&nbsp;[1]=> <br />
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string(7) "myapp" <br />
-				}<br />
+				}<br /><br />
 			
-				//The actual given URL: http://localhost/zanphp/index.php/en/myapp
+				//The current URL: http://localhost/zanphp/index.php/en/myapp
 			</p>
 		
 		<p class="sub-title">getURL()</p>
@@ -116,7 +116,7 @@
 				
 				print getURL(); <br /><br />
 				
-				//Prints: en/welcome
-				//The actual given URL: http://localhost/zanphp/index.php/en/welcome
+				//Prints: en/welcome <br />
+				//The current URL: http://localhost/zanphp/index.php/en/welcome
 			</p>
 	</article>		
