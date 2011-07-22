@@ -2,6 +2,10 @@
 function translation($text) {	
 	//Tabla de contenidos
 	switch($text) {
+		case "Download": return "Descarga"; break;
+		case "Structure": return "Estructura"; break;
+		case "Email Class": return "Clase Email"; break;
+		
 		//Credits
 		case "Credits": return "Créditos"; break;
 		case 'ZanPHP was developed by <a href="http://www.twitter.com/CZantany" target="_blank" title="@CZantany">Carlos Santana</a> (CEO of <a href="http://www.milkzoft.com" target="_blank">MilkZoft</a>). ZanPHP was developed in 2009, but was until July 2011 that took the decision to release as free software.': return 'ZanPHP fue desarrollado por <a href="http://www.twitter.com/CZantany" target="_blank" title="@CZantany">Carlos Santana</a> (CEO de <a href="http://www.milkzoft.com" target="_blank">MilkZoft</a>). ZanPHP fue desarrollado en 2009, pero hasta Julio de 2011 se tomo la decisión de liberarlo como software libre.'; break;
@@ -109,8 +113,6 @@ function translation($text) {
 		case "ZanPHP a user-friendly translations system, you only need to use a function and a file where you place the translations": return "ZanPHP implementa un sistema de traducciones fácil de usar, solo se necesita el uso de una función y un archivo donde se colocarán las traducciones"; break;
 		case "The function is used as follows": return "La función se utiliza de la siguiente forma"; break;
 		case "To complete the translation process, you must add the translation in the following file /core/languages/language.spanish.php, you must add as follows": return "Para completar el proceso de traducción, es necesario agregar la traducción en el siguiente archivo /core/languages/language.spanish.php, se debe de agregar de la siguiente forma"; break;
-		case "": return ""; break;
-		
 		
 		case "Basic Info": return "Información Básica"; break;
 		case "Server Requirements": return "Requerimientos del Servidor"; break;
@@ -351,8 +353,6 @@ function translation($text) {
 		case "Contains the fields of the table": return "Contiene los campos de la tabla"; break;	
 		case "Contains the values of the query": return "Contiene los valores de la consulta"; break;	
 		case "Constructor (loads a Database class object)": return "Constructor (Carga un objeto tipo Database)"; break;	
-		case "": return ""; break;	
-		case "": return ""; break;	
 		case "Sets the table and fields to perform a SQL query": return "Configura la tabla y los campos de una consulta SQL"; break;	
 		case "Sets values to perform an insert, update or query": return "Configura los valores para realizar una inserción, actualización o consulta SQL"; break;	
 		case "Calls ZP_Database::insert to perform an SQL insert": return "Invoca el método ZP_Database::insert para realizar una inserción SQL"; break;	
@@ -371,10 +371,6 @@ function translation($text) {
 		case "Counts records by SQL query": return "Cuenta todos los registros mediante una consulta SQL"; break;	
 		case "Performs a custom query": return "Realiza una consulta SQL personalizada"; break;	
 		case "Calls a stored procedure": return "Invoca un procedimiento Almacenado"; break;	
-		case "": return ""; break;	
-		case "": return ""; break;	
-		case "": return ""; break;	
-		case "": return ""; break;	
 	
 		//Email Class
 		case "This class allows to manipulate emails": return "Esta clase permite manipular emails"; break;	
@@ -383,16 +379,12 @@ function translation($text) {
 	
 		//Files Class
 		case "This class allows to upload files": return "Esta clase permite subir archivos"; break;	
-		case "": return ""; break;	
 		case "Uploads and resizes an image": return "Sube y redimensiona una imagen"; break;	
 		case "Gets the type of a file (Audio, Video, etc)": return "Obtiene el tipo de un archivo (Audio, Video, etc) "; break;	
 	
 		//Images Class
 		case "This class allows to manipulate images": return "Esta clase permite manipular imágenes"; break;
 		case "Creates and loads an image": return "Crea y carga una imagen"; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
 		case "Gets image's width": return "Obtiene el ancho en píxiles de una imagen"; break;
 		case "Gets image's height": return "Obtiene la altura en píxiles de una imagen"; break;
 		case "Performs a resize based on the image's height": return "Realiza una redimensión basada en la altura de la imagen"; break;
@@ -444,14 +436,13 @@ function translation($text) {
 		case "Sets and loads a js's file": return "Configura y carga un archivo JS"; break;
 		case "Sets header's title": return "Configura el título del encabezado"; break;
 		case "Gets the header's title": return "Obtiene el título del encabezado"; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
-		case "": return ""; break;
+
 	
 		#Load helpers: array, browser, debugging, forms, html and web
 	
 		//Creditos
 		case "Powered by": return "Desarrollado por"; break;
 	}
+	
+	return $text;
 }
