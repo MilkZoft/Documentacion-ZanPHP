@@ -97,7 +97,7 @@
 		<p class="sub-title">formInput()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: formInput($p = "Yes", $text = NULL, $name = NULL, $value = NULL, $class = "Input", $type = "text", $ID = NULL, $events = NULL, $src = NULL, $raquo = "Yes") <br />
+				<?php print __("Parameters"); ?>: formInput(array $attributes) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
@@ -188,7 +188,7 @@
 		<p class="sub-title">formTextarea()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: formTextarea(boolean $p = TRUE, string $text, string $name, string $value = NULL, string $class = "Textarea", string $ID = NULL, int $rows = 25, int $cols = 90, boolean $raquo = TRUE) <br />
+				<?php print __("Parameters"); ?>: formTextarea(array $attributes, $value) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
@@ -197,19 +197,22 @@
 			</p>	
 			
 			<p class="code">
-				print formTextarea(TRUE, "Foo", "bar", "Default Text", "textarea", "unique-id", 25, 90, TRUE); <br /> <br />
+			
+				$attributes = array("id" => "unique-id", "title" => "foo", "name" => "bar", "rows" => "25", "cols" => "90" "class" => "Textarea"); <br /> <br />
+				$value = "Default Text"; <br />
+				print formTextarea($attributes, $value); <br /> <br />
 				
-				&lt;p class="Field"&gt; <br />
-				&nbsp;&nbsp;&nbsp;&raquo; Foo &lt;br /&gt;<br />		
-				&nbsp;&nbsp;&nbsp;&lt;textarea id="unique-id" title="bar" name="bar" rows="25" cols="90" class="Textarea"&gt; Default Text &lt;/textarea&gt; <br />
-				&lt;/p&gt;
+				&lt;textarea id="unique-id" title="foo" name="bar" rows="25" cols="90" class="Textarea"&gt; <br /> 
+				&nbsp;&nbsp;&nbsp;Default Text <br />
+				&lt;/textarea&gt; <br />
+				
 
 			</p>
 		
 		<p class="sub-title">formOpen() and formClose()</p>
 
 			<p class="parameters">
-				<?php print __("Parameters"); ?>: formOpen(string $ID = NULL, string $text = NULL, string $action, string $class = "Forms", string $method = "post", string $enctype = "multipart/form-data") <br />
+				<?php print __("Parameters"); ?>: formOpen(array $attributes, string $legend) <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 			
@@ -218,12 +221,15 @@
 			</p>	
 			
 			<p class="code">
-				print formOpen("foo", "Form", "bar.php", "Forms", "post", "multipart/form-data");<br />
+				$attributes = array("id" => "foo", "action" => "bar.php", "method" => "post", "class" => "forms", "enctype" => "multipart/form-data"); <br />
+				$legend     = "Form"; <br /><br />
+				
+				print formOpen($attributes, $legend);<br />
 				&nbsp;&nbsp;&nbsp;//Your form elements here<br />
 				print formClose();<br /><br />
 
 				//Prints: <br />
-				&lt;form id="foo" action="bar.php" method="post" class="Forms" enctype="multipart/form-data"&gt; <br />
+				&lt;form id="foo" action="bar.php" method="post" class="forms" enctype="multipart/form-data"&gt; <br />
 				&nbsp;&nbsp;&nbsp;&lt;fieldset&gt; <br />
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Form&lt;/legend&gt; <br /><br />
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Your form elements here<br /><br />

@@ -270,11 +270,53 @@ function translation($text) {
 	}
 	
 	//HTML Helper
-	if($text === "This function sets a specific &lt;input /&gt; type Checkbox tag and its attributes") {
-		return "Esta función configura una etiqueta &lt;input /&gt; de tipo Checkbox y sus atributos";	
-	} elseif($text === "This function sets a &lt;p&gt; tag to label a field from a form") {
-		return "Esta función configura una etiqueta &lt;p&gt; para rotular el campo de una formulario";	
+	if($text === "The Helper HTML contains functions to manipulate HTML elements with PHP") {
+		return "El Ayudante HTML contiene funciones para manipular elementos HTML mediante PHP";	
+	} elseif($text === "Sets a &lt;a&gt; tag and its attributes") {
+		return "Configura una etiqueta &lt;a&gt; y sus atributos";	
+	} elseif($text === "Sets an &lt;body&gt; opening/closing tag") {
+		return "Configura una etiqueta &lt;body&gt; de apertura o cierre ";	
+	} elseif($text === "Sets a &lt;span&gt; tag with the CSS Bold property") {
+		return "Configura una etiqueta &lt;span&gt; con la propiedad CSS Bold";	
+	} elseif($text === "Sets a &lt;br&gt; tag") {
+		return "Configura una etiqueta &lt;br&gt;";	
+	} elseif($text === "Sets an UTF-8 character") {
+		return "Configura un caracter UTF-8";	
+	} elseif($text === "Sets an &lt;div&gt; tag") {
+		return "Configura una etiqueta &lt;div&gt;";	
+	} elseif($text === "Sets a &lt;!DOCTYPE&gt; declaration") {
+		return "Configura una declaración &lt;!DOCTYPE&gt;";	
+	} elseif($text === "Converts all HTML entities to its respective characteres from a string") {
+		return "Convierte todas las entidades HTML de una cadena a sus caracteres correspondientes";	
+	} elseif($text === "Sets a &lt;h1&gt; tag") {
+		return "Configura una etiqueta &lt;h1&gt;";	
+	} elseif($text === "Sets a &lt;h2&gt; tag") {
+		return "Configura una etiqueta &lt;h2&gt;";	
+	} elseif($text === "Sets a &lt;h3&gt; tag") {
+		return "Configura una etiqueta &lt;h3&gt;";	
+	}elseif($text === "Sets a &lt;img /&gt; tag") {
+		return "Configura una etiqueta &lt;img /&gt;";	
+	} elseif($text === "Sets an &lt;head&gt; tag") {
+		return "Configura una etiqueta &lt;head&gt;";	
+	} elseif($text === "Sets an &lt;HTML&gt; tag") {
+		return "Configura una etiqueta &lt;HTML&gt;";	
+	} elseif($text === "Sets an &lt;p&gt; tag and its class attribute") {
+		return "Configura una etiqueta &lt;p&gt; y su atributo class";	
+	} elseif($text === "Sets an &lt;small&gt; tag") {
+		return "Configura una etiqueta &lt;small&gt;";	
+	} elseif($text === "Sets an &lt;span&gt; tag and its class attribute") {
+		return "Configura una etiqueta &lt;span&gt; y su atributo class";	
+	} elseif($text === "") {
+		return "";	
+	} elseif($text === "") {
+		return "";	
+	} elseif($text === "") {
+		return "";	
+	} elseif($text === "") {
+		return "";	
 	}
+	
+	
 	
 	//i18n Helper
 	if($text === "The Helper i18n contains functions of Internationalization") {
