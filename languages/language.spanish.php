@@ -310,6 +310,7 @@ function translation($text) {
 		
 		//Web Helper
 		case "The Helper Web contains Web functions related": return "El Ayudante Web contiene funciones relacionadas con la Web";
+		case "Gets and prints default meta tags": return "Obtiene e imprime las etiquetas &lt;meta&gt; por defecto"; break;
 		
 		#Classes
 		case "Loading this Class": return "Cargando esta clase"; break;	
