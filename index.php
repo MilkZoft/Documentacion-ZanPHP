@@ -75,10 +75,8 @@ define("_modRewrite", FALSE);
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/server_requirements"><?php print __("Server Requirements"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/licence"><?php print __("License Agreement"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/basic/credits"><?php print __("Credits"); ?></a></li>
-						<li class="ListMenu"><?php print __("Installation"); ?></li>
-							<li class="ListSMenu"><a href="http://www.zanphp.com/download/" target="_blank"><?php print __("Downloading ZanPHP v.1.0"); ?></a></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/installation/instructions"><?php print __("Instructions"); ?></a></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/installation/troubleshooting"><?php print __("Troubleshooting"); ?></a></li>
+						<li class="ListMenu"><?php print __("Download"); ?></li>
+							<li class="ListSMenu"><a href="https://github.com/MilkZoft/ZanPHP" target="_blank"><?php print __("Downloading ZanPHP v.1.0"); ?></a></li>
 						<li class="ListMenu"><?php print __("Introduction"); ?></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/introduction/"><?php print __("Getting Started"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/introduction/supported_features"><?php print __("Supported Features"); ?></a></li>
