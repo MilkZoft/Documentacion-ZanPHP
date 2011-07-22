@@ -45,4 +45,12 @@
         <p class="text">
         	<?php print __("The second configuration file, will all those config.constants.php constant for the operation of our site, that is general constant, noting that there are some important constants configured for the proper functioning of the site and the framework, these include:"); ?>
         </p>
+        
+        <p class="text">
+        	<ul>
+            	<li><?php print __("<strong>_domain:</strong> serves to specify the domain that our site will have."); ?></li>
+                <li><?php print __("<strong>_modRewrite:</strong> toggles the stylization of URLs (TRUE or FALSE)."); ?></li>
+                <li><?php print __("<strong>_webURL:</strong> URL allows you to configure the general site will useful to load images, scripts, etc."); ?></li>
+            </ul>
+        </p>
 	</article>
