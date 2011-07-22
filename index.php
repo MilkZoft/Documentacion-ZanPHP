@@ -92,7 +92,6 @@ define("_modRewrite", FALSE);
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/views"><?php print __("Views"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/models"><?php print __("Models"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/translations"><?php print __("Translations"); ?></a></li>
-							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/debugging"><?php print __("Debugging"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/libraries"><?php print __("Libraries"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/scripts"><?php print __("Scripts"); ?></a></li>
 							<li class="ListSMenu"><a href="<?php print $URL; ?>/general/templates"><?php print __("Templates"); ?></a></li>

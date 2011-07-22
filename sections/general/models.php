@@ -27,7 +27,7 @@
         </p>
         
         
-        <p class="Code">
+        <p class="code">
 			class MyApplication_Model extends ZP_Load { <br /><br />
 	
 			&nbsp;&nbsp;&nbsp;&nbsp;public function __construct() { <br />

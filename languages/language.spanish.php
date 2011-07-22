@@ -100,6 +100,13 @@ function translation($text) {
 		case "Views should be named as follows: view.myview.php and must be located in the /views of each application" : return "Las vistas deben de ser nombradas de la siguiente forma: view.myview.php y deben estar ubicadas en el directorio /views de cada aplicación"; break;
 		case "Another important aspect to mention about the directory /views, is that this can be created within the /css, /js or /images, where can be placed style sheets, scripts and images that will be used only by the application": return "Otro aspecto importante para mencionar acerca del directorio /views, es que dentro de este pueden crearse los directorios /css, /js o /images; donde deberán de ser colocados las hojas de estilos, scripts e imagenes que serán utilizadas unicamente por la aplicación"; break;
 		
+		//Translations
+		case "ZanPHP a user-friendly translations system, you only need to use a function and a file where you place the translations": return "ZanPHP implementa un sistema de traducciones fácil de usar, solo se necesita el uso de una función y un archivo donde se colocarán las traducciones"; break;
+		case "The function is used as follows": return "La función se utiliza de la siguiente forma"; break;
+		case "To complete the translation process, you must add the translation in the following file /core/languages/language.spanish.php, you must add as follows": return "Para completar el proceso de traducción, es necesario agregar la traducción en el siguiente archivo /core/languages/language.spanish.php, se debe de agregar de la siguiente forma"; break;
+		case "": return ""; break;
+		
+		
 		case "Basic Info": return "Información Básica"; break;
 		case "Server Requirements": return "Requerimientos del Servidor"; break;
 		case "License Agreement": return "Licencia de Uso"; break;

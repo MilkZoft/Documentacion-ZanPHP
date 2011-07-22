@@ -23,7 +23,7 @@
 		</p>
         
         <p class="text">
-        	<?php print __("Views should be named as follows: view.myview.php and must be located in the /views of each application"); ?>:
+        	<?php print __("Views should be named as follows: view.myview.php and must be located in the /views of each application"); ?>.
         </p>
 		
 		<p class="text">

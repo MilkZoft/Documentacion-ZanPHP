@@ -16,66 +16,66 @@
 	include "search.php";
 ?>
 
-<div class="Clear"></div>
+<div class="clear"></div>
 
 
 	<article>
-		<p class="Title">
+		<p class="title"">
 			<?php print __("Inflect Helper"); ?><br />
 		</p>
 		
-			<p class="Small">
+			<p class="small">
 				core/helpers/inflect.forms.php
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The Helper inflect contains functions to inflect words"); ?>.
 			</p>
 		
-		<p class="SubTitle"><?php print __("Loading this Helper"); ?></p>
+		<p class="sub-title"><?php print __("Loading this Helper"); ?></p>
 		
-			<p class="Text">
+			<p class="text">
 				<?php print __("This helper is loaded using the following code"); ?>:
 			</p>
 			
-			<p class="Code">
+			<p class="code">
 				$this->helper("inflect");
 			</p>
 			
-			<p class="Text">
+			<p class="text">
 				<?php print __("The following functions are available"); ?>:
 			</p>				
 		
-		<p class="SubTitle">pluralize()</p>
+		<p class="sub-title">pluralize()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: __(string $word); <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns the plural form of a Word"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				print pluralize("Woman"); <br /><br />
 				
 				//Prints: "Women" .<br />						
 			</p>
 			
-		<p class="SubTitle">singularize()</p>
+		<p class="sub-title">singularize()</p>
 
-			<p class="Parameters">
+			<p class="parameters">
 				<?php print __("Parameters"); ?>: __(string $word); <br />
 				<?php print __("Return"); ?>:  <?php print __("@string"); ?>;
 			</p>
 		
-			<p class="Text"> 
+			<p class="text"> 
 				<?php print __("This function returns the singular form of a Word"); ?>. <?php print __("Example"); ?>:
 			</p>	
 			
-			<p class="Code">
+			<p class="code">
 				
 				print singularize("Tomatoes"); <br /><br />
 				
