@@ -351,7 +351,7 @@ function translation($text) {
 		case "Contains the fields of the table": return "Contiene los campos de la tabla"; break;	
 		case "Contains the values of the query": return "Contiene los valores de la consulta"; break;	
 		case "Constructor (loads a Database class object)": return "Constructor (Carga un objeto tipo Database)"; break;	
-		case "": return ""; break;	
+		case "Contains the row content in fetch mode": return "Contiene el contenido del registro devuelto por fetch()"; break;	
 		case "": return ""; break;	
 		case "Sets the table and fields to perform a SQL query": return "Configura la tabla y los campos de una consulta SQL"; break;	
 		case "Sets values to perform an insert, update or query": return "Configura los valores para realizar una inserción, actualización o consulta SQL"; break;	
